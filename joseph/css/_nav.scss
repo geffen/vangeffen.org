@@ -1,0 +1,193 @@
+nav {
+    position: fixed;
+    top: 2.6vw;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+
+    @include devices(mobile) {
+        top: 5vw;
+    }
+
+    .nav_logo {
+        p:nth-child(1) {
+            @include font20;
+            font-family: $fontM;
+        }
+
+        p:nth-child(2) {
+            @include font16;
+            margin-top: 0.26vw;
+            color: $grey;
+
+            @include devices(mobile) {
+                margin-top: 0vw;
+            }
+        }
+    }
+
+    .nav_links {
+        height: 3.12vw;
+        padding: 0 0.26vw;
+        background: $white;
+        border-radius: 50px;
+
+        @include devices(laptop) {
+            height: 3.5vw;
+        }
+
+        @include devices(tablet) {
+            display: none;
+        }
+
+        ul {
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            li {
+                width: 5.5vw;
+                height: 2.6vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                @include devices(laptop) {
+                    width: 6vw;
+                    height: 2.9vw;
+                }
+
+                a {
+                    @include font18;
+                    color: $black;
+                }
+            }
+
+            .active {
+                background: $black;
+                border-radius: 50px;
+
+                a {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .nav_socials {
+        p {
+            @include font16;
+            color: $grey;
+            text-align: right;
+        }
+
+        ul {
+            display: flex;
+            gap: 1.3vw;
+
+            li {
+                margin-top: 0.26vw;
+
+                a {
+                    @include font20;
+                    color: $black;
+                }
+            }
+        }
+
+        @include devices(tablet) {
+            display: none;
+        }
+    }
+
+    .nav_btn {
+        display: none;
+
+        @include devices(tablet) {
+            display: block;
+        }
+    }
+}
+
+.responsive_nav {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: $black;
+    z-index: 100;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    transform: translateY(-1000px);
+    opacity: 0;
+    transition: all ease .5s;
+
+    @include devices(mobile) {
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+
+    .close {
+        position: absolute;
+        right: 7%;
+        top: 7%;
+
+        img {
+            width: 3vw;
+        }
+    }
+
+    .resLinks {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        padding-bottom: 2.6vw;
+        padding-top: 15vw;
+        @include devices(mobile) {
+            padding-top: 25vw;
+            padding-bottom: 10vw;
+        }
+        ul {
+            li {
+                margin: 4vw 0;
+                @include devices(mobile) {
+                    margin: 7vw 0;
+                }
+                a {
+                    @include font28;
+                    color: $white;
+
+                    &.active {
+                       background: $white;
+                       color: $black;
+                       padding: 1.5vw 3vw;
+                       border-radius: 50px;
+                    }
+                }
+            }
+        }
+        .social{
+            margin-top: 5.2vw;
+            p{
+                color: $grey;
+                @include font18
+            }
+            ul{
+                display: flex;
+                gap: 5vw;
+            }
+        }
+    }
+}
+
+.responsive_nav.active {
+    transform: translateY(0);
+    opacity: 1;
+}

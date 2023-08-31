@@ -36,6 +36,7 @@
             padding: 15vw 5.2vw;
         }
         .content{
+            height:100%;
             .top{
                 display: flex;
                 justify-content: space-between;
@@ -54,13 +55,29 @@
                     }
                 }
             }
+            .avatarstand{
+                height:80%;
+                .vrm {
+                    object-fit: contain;
+                    position: relative;
+                    height: 100%;
+                    display: flex;
+                    width: 100%;
+                    align-items: center;
+                    padding-top: 5vw;
+                }
+            }
             .form{
-                margin-top: 5vw;
+                margin: auto;
+                display: flex;
+                position: relative;
+                align-items: center;
+                width:80%;
                 @include devices(tablet) {
-                    margin-top: 10vw;
+                    margin-top: 4vw;
                 }
                 @include devices(mobile) {
-                    margin-top: 15vw;
+                    margin-top: 6vw;
                 }
                 p{
                     @include font28;
@@ -120,12 +137,14 @@
                     }
                 }
                 .contact_btn{
-                    margin-top: 3.6vw;
+                    margin-top: 2vw;
+                    width: 50%;
+                    display: inline-block;
                     @include devices(tablet) {
-                        margin-top: 7vw;
+                        margin-top: 1vw;
                     }
                     @include devices(mobile) {
-                       margin-top: 10vw;
+                       margin-top: 2vw;
                     }
                 }
             }

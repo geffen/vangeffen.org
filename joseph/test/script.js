@@ -62,9 +62,6 @@ function changeGnar(gnarnumber) {
       drawGnar();
  }
 
-
-
-
 // Make sure the image is loaded first otherwise nothing will draw./
 function drawBkgd() {
     var background = new Image();

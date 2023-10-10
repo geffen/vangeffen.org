@@ -231,6 +231,16 @@ a {
   cursor: pointer;
   transition: all 0.3s;
 }
+@media only screen and (max-width: 1140px) {
+  .md-button {
+    font-size: 2.6vw;
+  }
+}
+@media only screen and (max-width: 912px) {
+  .md-button {
+    font-size: 2.6vw;
+  }
+}
 
 .md-button:hover {
   background-color: rgba(0, 0, 0, 0.1);
@@ -265,10 +275,6 @@ a {
   padding: 8px 12px;
 }
 
-.toggleButton {
-  margin-top: 20px;
-}
-
 /* TOGGLE */
 #menuToggle {
   display: none;
@@ -298,6 +304,15 @@ a {
 a[target=_blank] {
   color: black;
   display: inline;
+}
+
+.incontent {
+  float: right !important;
+  margin-top: 0px !important;
+  width: 120px !important;
+  height: 120px !important;
+  margin-left: 10px;
+  border-radius: 0px !important;
 }
 
 /* components */

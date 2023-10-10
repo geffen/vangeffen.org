@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joseph Van Geffen | Zcash Casestudy</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" href="favicon.ico">
+    <!-- Splide carousel -->
+    <link rel="stylesheet" href="css/splide.min.css">
+    <link rel="icon" href="images/favicon-zcash.png">
 </head>
 
 <body>
@@ -111,8 +113,8 @@
         <div class="nav_links">
             <ul id="frame">
                 <li><a href="index.html">Welcome</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li class="active"><a href="about.html">About</a></li>
+                <li class="active"><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="#a" class="btncc">Contact</a></li>
             </ul>
         </div>
@@ -164,7 +166,7 @@
                             <p>Cryptocurrency</p>
                         </li>
                         <li>
-                            <p>Privacy Centric</p>
+                            <p>Privacy-First</p>
                         </li>
                         <li>
                             <p>Mobile Payments</p>
@@ -213,17 +215,34 @@
                 </div>
             </div>
             <div class="right">
-                <h1>I joined <span>Zcash</span>, a privacy-centric cryptocurrency, to help them solve a severe usability problem and create a flagship mobile application.</h1>
-                <p>The Zcash blockchain-based payment network leverages zero-knowledge proofs allowing shielded transactions from public eyes. The technology worked smoothly, but usability required an expert level understanding and a desktop (or server) running a node you would interact with through a command line interface. There were more pain points around the four different types of transactions: transparent or shielded with qualities of shielding or deshielding. The users didn’t understand that their privacy coin was not private by default. This was a huge marketing mistake, but one required to follow regulations and avoid being thought of as a darkweb coin. Part of my job would be to try and fix this basic misunderstanding.
+                <h1>I joined <span for="menuToggle" class="toggleButton">Zcash</span> <label for="menuToggle" class="toggleButton md-button md-button--raised">Zcash</label>, a privacy-first cryptocurrency, to help them solve a severe usability problem and create a flagship mobile application.</h1>
+                <p>The Zcash blockchain-based payment network leverages zero-knowledge proofs allowing shielded transactions from public eyes. The technology worked smoothly, but usability was low. A user was required an expert level understanding and a desktop (or server) running a node to interact with through a command line interface. There were more pain points around the four different types of transactions: transparent or shielded with qualities of shielding or deshielding. The users didn’t understand that their privacy coin was not private by default as the protocol's description implied! This was a huge mistake in the conversation with users, and the technical explanations only further muddied the waters. Government regulation (FATF/IRS) and centralized exchanges required a transparent address (or leveraging of viewing keys), but users were not educated well enough to know they needed to create a sheilded address to unlock the protocols privacy. Part of my job would be to try and fix this basic misunderstanding and repair that relationship, but the majority would be to ensure new users were educated inline with adopting ZEC usage.
                 </p>
-                <p>The design brief evolved overtime*, but the final goal was a functioning public wallet. What drew me to this project was their mandate of helping the world establish financial freedom with the mantra 'Privacy is a human right'. It also allowed me to collaborate with cryptographers working on exotic math and translate my traditional banking experience to the blockchain.
+                <p>The design brief evolved overtime, but the final goal was a functioning public wallet. What drew me to this project was their mandate of helping the world establish financial freedom with the mantra 'Privacy is a human right'. It also allowed me to collaborate with cryptographers working on exotic math and translate my traditional banking experience to the blockchain.
                 </p>
-                <p class="infobox" style="">*Zcash renamed themselves The Electric Coin Company to create a clear difference between the protocol/token itself and themselves as partial stewards of the coin. There is a second steward, the Zcash Foundation, which also works for the protocol’s benefit to ensure decentralization. I worked full time for ECC, but also collaborated with ZF extensively. For the sake of this case-study I will be talking about Zcash as a product and will use that name consistently, for clarity.
+                
+                <div>
+                    <input id="menuToggle" type="checkbox">
+                    <div class="infobox md-card">
+                        <div class="md-card-content">
+                            <h2>Electric Coin Company</h2>
+                            <span class="md-caption">Zcash renamed.</span>
+                            <p>Zcash renamed themselves The Electric Coin Company to create a clear difference between the protocol/token itself and themselves as partial stewards of the coin.</p>
+                            <p>There is a second steward, the Zcash Foundation, which also works for the protocol’s benefit to ensure decentralization. I worked full time for ECC, but also collaborated with ZF extensively. For the sake of this case-study I will be talking about Zcash as a product and will use that name consistently, for clarity.</p>
+                        </div>
+                        <div class="md-card-btns">
+                            <label for="menuToggle" class="md-button">Close Box</label>
+                        </div>
+                    </div>
+                </div>
                     
-                </p>
+
+                
+
+                    
                 <p> My starting responsibility was to bootstrap a team and start working with leadership to create a public product. My initial mandate was to create the mobile wallet designs, hire developers, and provide design support for implementation. While interviewing developer candidates, we immediately spun up a user research project and found our first problem: How do you find users to interview if the product is completely secure and private? How do you get anonymous people to raise their hand into the air and announce themselves? This was going to be a fun project.
                 </p>
-                <p>Our investigative solution was two-fold:
+                <p><b>Our investigative solution was two-fold:</b>
                 
                     <ul>
                         <li>
@@ -236,57 +255,125 @@
                         </li>
                     </ul>
                 </p>
-                <img src="assets/casestudy-zcash/personas/summary.jpg" alt="" srcset="" style="border-radius: 0px;margin-top: 2vw;">
+                <p><h1>Cryptocurrency Personas</h1></p>
+
+
+                <p>
+                    <section class="splide" aria-label="Zcash Wireframes" id="image-carousel">
+                        <div class="splide__track">
+                              <ul class="splide__list">
+                                <li class="splide__slide">Summary of Personas
+                                <img src="assets/casestudy-zcash/personas/summary.jpg" alt="Illustration of dripping ZEC Zebra" srcset="" style="border-radius: 0px;margin-top: 2vw;"></li>
+                                <li class="splide__slide">Persona: 
+                                    <img src="assets/casestudy-zcash/personas/Traders-2019Q4.png" alt="Persona" srcset="" style="border-radius: 0px;margin-top: 2vw;"></li>
+                                <li class="splide__slide">Persona: Wallet Developers
+                                <img src="assets/casestudy-zcash/personas/WalletDevelopers-2019Q4.png" alt="Persona" srcset="" style="border-radius: 0px;margin-top: 2vw;"></li>
+                                <li class="splide__slide">Persona: Small Holders
+                                    <img src="assets/casestudy-zcash/personas/SmallHolder-2019Q4.png" alt="Persona" srcset="" style="border-radius: 0px;margin-top: 2vw;"></li>
+                                <li class="splide__slide">Persona: Investors
+                                    <img src="assets/casestudy-zcash/personas/Investor-2019Q4.png" alt="Persona" srcset="" style="border-radius: 0px;margin-top: 2vw;"></li>
+                                <li class="splide__slide">Persona: Regulators
+                                    <img src="assets/casestudy-zcash/personas/Regulators-2019Q4.png" alt="Persona" srcset="" style="border-radius: 0px;margin-top: 2vw;"></li>
+                                <li class="splide__slide">Persona: Miners
+                                    <img src="assets/casestudy-zcash/personas/Miners-2019Q4.png" alt="Persona" srcset="" style="border-radius: 0px;margin-top: 2vw;"></li>
+                              </ul>
+                        </div>
+                      </section>
+                    </p>
+
                 <p>All of this user research allowed us to validate enough of our assumptions to create personas and decide on which mobile platform (Android/iOS) we would use to design the initial prototype. We created a rapid prototype and tested it on usertesting.com. It was a small sample size, with the interview only requiring that the user knew about cryptocurrency, and a script that had them create a wallet, receive and send funds, and view the transaction details.  
                 </p>
                 <p>We created a rapid prototype and tested it on usertesting.com. It was a small sample size, with the interview only requiring that the user knew about cryptocurrency, and a script that had them create a wallet, receive and send funds, and view the transaction details.
                 </p>
                 <p>We targeted developers believing that if we created the tools the ecosystem would help build itself. This was proven somewhat true, but future network upgrades made this tricker than we had expected. It should be mentioned that marketing had a different set of personas which prioritized getting ZEC listed on more exchanges and general Zcash education. Regardless, we chose to more thoroughly follow our goal of creating financial freedom for all, and picked Android as our first platform. It could reach, with supported OS versions, 97% of their base - so we could reach more users in emerging economies and make remittance available across the globe.
                 </p>
-                <p><h3>Proof of Concept - https://www.youtube.com/watch?v=ZTxbSm8_KTM</h3></p>
+                <p><h1><a href="https://www.youtube.com/watch?v=ZTxbSm8_KTM" target="_blank">Proof of Concept</a></h1></p>
                 <p>About this time we had our proof-of-concept: a wallet app that could create zk-proofs on the device and work with a server to send/receive funds without any break in privacy. We were off to a good start! </p>
                 <p>The proof of concept was based on wireframes and rough sketches. While we had gotten feedback from user testing, that was with an invision click through prototype - not real proofs and blockchain transactions. This version of the app proved what we believed possible, and set us clearly as the only coin with true privacy. Below you can see the wireframes used to validated this PoC.</p>
-                <p>Wireframes:
+
+                <p>
+                <section class="splide" aria-label="Zcash Wireframes" id="image-carousel-personas">
+                    <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide">Proof of Concept Gallery
+                                <img src="assets/casestudy-zcash/zcash-poc.jpg" alt="Illustration of dripping ZEC Zebra" srcset="" style="border-radius: 0px;margin-top: 2vw;"></li>
+                              <li class="splide__slide">Wireframes: First time users and onboarding flows:
+                                <img src="assets/casestudy-zcash/1st-use-flows.jpg" alt="Wireframe of the first-time user flows" srcset="" style="border-radius: 0px;margin-top: 2vw;">   </li>
+                              <li class="splide__slide">Wireframes: Second time users and homescreen:
+                                <img src="assets/casestudy-zcash/2nd-use-flows.jpg" alt="Wireframe of the second-time user and homescreen flows" srcset="" style="border-radius: 0px;margin-top: 2vw;"></li>
+                              
+                          </ul>
+                    </div>
+                  </section>
+                </p>
                 
+                <p>We gathered final (for this phase) feedback from the stakeholders and started to implement  synthesized changes from all the earlier designs and prototypes. We used these findings and the Proof-of-Concept to create a Reference Wallet; an open-source wallet on Android (which embraced the Material Design system from Google). All code and assets were published and offered to 3rd parties to bootstrap their own wallet. </p>
+
+                <p><h1><a href="https://electriccoin.co/blog/zcash-reference-wallet-design/" target="_blank">Reference Wallet</a></h1></p>
+
+                <p>
+                    <section class="splide" aria-label="Zcash REF User Flows" id="image-carousel2">
+                        <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">Reference Wallet Gallery
+                                        <img src="assets/casestudy-zcash/Android_materialdesign.jpg" alt="Wireframe of the first-time user flows" srcset="" style="border-radius: 0px;margin-top: 2vw;">   </li> 
+                                    <li class="splide__slide">Reference Wallet: Overview Screens
+                                        <img src="assets/casestudy-zcash/ReferenceWallet.jpg" alt="Picture of three overview screens" srcset="" style="border-radius: 0px;margin-top: 2vw;"></li>
+                                    <li class="splide__slide">Reference Wallet: Onboarding Flow
+                                    <img src="assets/casestudy-zcash/refwallet-onboarding.png" alt="Reference Wallet: Onboarding Flow" srcset="" style="border-radius: 0px;margin-top: 2vw;"></li>
+                                    <li class="splide__slide">Reference Wallet: General-Use Flow
+                                        <img src="assets/casestudy-zcash/refwallet-generaluse.png" alt="Wireframe of the second-time user and homescreen flows" srcset="" style="border-radius: 0px;margin-top: 2vw;"></li>
+                                   
+                                </ul>
+                        </div>
+                    </section>
+                </p>
+                
+                <p>After the Reference Wallet was released we did a second round of user research with added facets. Now that we had a fully functioning product we were able to truly test all the user flows and we did this in two ways:</p>
+                <p>
                     <ul>
-                        <li>First time users and onboarding flows:
-                            <img src="assets/casestudy-zcash/1st-use-flows.jpg" alt="Wireframe of the first-time user flows" srcset="" style="border-radius: 0px;margin-top: 2vw;">                       
+                        <li><p>1: We created a dogfooding project within the company. All employees would use the application to receive a small part of their paycheck in ZEC. This forced everyone to be our end-user and created a constant feedback loop we could iterate off of.</p>                      
                         </li>
-                        <li>Second time users and homescreen:
-                            <img src="assets/casestudy-zcash/2nd-use-flows.jpg" alt="Wireframe of the second-time user and homescreen flows" srcset="" style="border-radius: 0px;margin-top: 2vw;">
+                        <li><p>2: We had an SDK available to the public that allowed other organizations to bootstrap their own Zcash app. Nighthawk and Zecwallet stood up to do this, with Unstoppable and Edge only taking on the evolved APIs to work within their current FFI landscape.</p>
                         </li>
                     </ul>
                 </p>
-                <p>We gathered final (for this phase) feedback from the stakeholders and started to implement feedback synthesized from all the earlier designs and prototypes. We used these findings and the Proof-of-Concept to create a Reference Wallet; an open-source wallet on Android (which embraced the Material Design system from Google). All code and assets were published and offered to 3rd parties to bootstrap their own wallet. </p>
 
-                <img src="assets/casestudy-zcash/Android_materialdesign.jpg" alt="Illustration of dripping ZEC Zebra" srcset="" style="border-radius: 0px;margin-top: 2vw;">
-                
-                https://electriccoin.co/blog/zcash-reference-wallet-design/
-                
-                <img src="assets/casestudy-zcash/ReferenceWallet.jpg" alt="Illustration of dripping ZEC Zebra" srcset="" style="border-radius: 0px;margin-top: 2vw;">
-                
-                <p>After the Reference Wallet was released we did a second round of user research with added facets. Now that we had a fully functioning product we were able to truly test all the user flows and we did this in two ways:
-                
-                    <ul>
-                        <li>1: We created a dogfooding project within the company. All employees would use the application to receive a small part of their paycheck in ZEC. This forced everyone to be our end-user and created a constant feedback loop we could iterate off of.                      
-                        </li>
-                        <li>2: We had an SDK available to the public that allowed other organizations to bootstrap their own Zcash app. Nighthawk and Zecwallet stood up to do this, with Unstoppable and Edge only taking on the evolved APIs to work within their current FFI landscape.
-                        </li>
-                    </ul>
+                <p><h1><a href="https://electriccoin.co/blog/zcash-reference-wallet-design/" target="_blank">Secant (Internal ECC) Wallet</a></h1></p>
+
+                <p>Now that we had battle tested applications and external feedback, we grew the team to support both Android and iOS. We created designs and code to support both light and dark modes, internationalization, and accessibility. ECC is still in the process of implementing designs and animations, but has recently released <a href="https://repo1.maven.org/maven2/cash/z/ecc/android/zcash-android-sdk/2.0.0" target="_blank">SDK 2.0</a>!</p>
+                <p>
+                    
                 </p>
-
-
-                https://www.youtube.com/watch?v=-lUhiFN6yiA
-
-                https://electriccoin.co/wp-content/uploads/2020/10/Zcash_designguide.pdf
-
-
-
-                <img src="assets/casestudy-zcash/zcash-poc.jpg" alt="Illustration of dripping ZEC Zebra" srcset="" style="border-radius: 0px;margin-top: 2vw;">
-                <img src="assets/casestudy-zcash/zcash-poc-flows.jpg" alt="Illustration of dripping ZEC Zebra" srcset="" style="border-radius: 0px;margin-top: 2vw;">
-
 
                 <img src="assets/casestudy-zcash/zebra-drip.jpg" alt="Illustration of dripping ZEC Zebra" srcset="" style="border-radius: 0px;margin-top: 2vw;">
+            </div>
+        </div>
+        <div class="content" id="approach">
+            <div class="left">
+                <div>
+                    <span>Links</span>
+                </div>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <h1><a href="https://www.youtube.com/watch?v=-lUhiFN6yiA" target="_blank">The Once and Future ECC Wallet</a></h1>
+                        <p>A discussion on the ECC Wallet's past and future from Zcon3. Geffen and Pacu focus on the experience of building the app from scratch, the lessons they learned, and where they plan to go next. They dig into how NU5 evolved the mobile app and how user feedback in real situations has helped. Additionally, the expound on future features and known hurdles.</p>
+                    </li>
+                    <li>
+                        <h1><a href="https://electriccoin.co/wp-content/uploads/2020/10/Zcash_designguide.pdf" target="_blank">ECC Wallet Styleguide</a></h1>
+                        <p>A mobile styleguide created by Geffen to provide UI design and development guidance. Additionally it fosters best practices, and deliver consistency across the user experience.</p>
+                    </li>
+                    <li>
+                        <h1><a href="https://electriccoin.co/blog/zcash-reference-wallet-design"  target="_blank">Reference Wallet</a></h1>
+                        <p>A reference implementation is concrete and functioning code that proves that a concept can work. Our reference wallet proves that Zcash shielded transactions can work on mobile devices with limited resources. This blog post digs deeper into our UX considerations and provides an overview of our design decisions and rationale.</p>
+                    </li>
+                    <li>
+                        <h1><a href="https://www.youtube.com/watch?v=ZTxbSm8_KTM" target="_blank">Proof of Concept</a></h1>
+                        <p>First Denver Zcash Meetup, youtube linkFirst Denver Zcash Meetup, youtube linkFirst Denver Zcash Meetup, youtube linkFirst Denver Zcash </p>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="content" id="education">
@@ -299,54 +386,11 @@
                 <ul>
                     <li>
                         <p>Electric Coin Company</p>
-                        <p>2018-2023</p>
+                        <p>2019 - 2023</p>
                     </li>
                     <li>
-                        <p>Capital One; Small Business Banking</p>
-                        <p>2014-2017</p>
-                    </li>
-                    <li>
-                        <p>Creative Developer for mobile games company</p>
-                        <p>2009-2013</p>
-                    </li>
-                    <li>
-                        <p>User Experience Designer for smart televisions</p>
-                        <p>2004-2008</p>
-                    </li>
-                    <li>
-                        <p>Marketing and Ad Agency Microsite Production</p>
-                        <p>1998-2003</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="content" id="approach">
-            <div class="left">
-                <div>
-                    <span>Approach</span>
-                </div>
-            </div>
-            <div class="right">
-                <ul>
-                    <li>
-                        <h1>Wireframes</h1>
-                        <p>Wireframes are a crucial tool in the design process, providing a blueprint for the layout and
-                            functionality of a digital product. To create effective wireframes, it's important to
-                            understand the user's needs and goals, as well as the requirements and constraints of the
-                            project.</p>
-                    </li>
-                    <li>
-                        <h1>Digital Design</h1>
-                        <p>To create effective designs, it's important to understand the needs, goals, and behaviors of
-                            the target audience. This can be achieved through user research and testing, which can
-                            uncover insights about user preferences and pain points. Once this information is gathered,
-                            designers can create wireframes and prototypes to iterate and refine the design.</p>
-                    </li>
-                    <li>
-                        <h1>Webflow Development</h1>
-                        <p>Webflow provides extensive design control, allowing users to customize every aspect of their
-                            websites. From typography and layouts to animations and interactions, users have the
-                            flexibility to create unique and visually appealing designs.</p>
+                        <p>Zcash</p>
+                        <p>2018 - 2019</p>
                     </li>
                 </ul>
             </div>
@@ -356,51 +400,38 @@
     <section class="awwards container">
         <div class="wrapper">
             <div class="wrapper_left">
-                <p>Awards & Recognitions</p>
+                <p>About Zcash / ECC / ZF</p>
             </div>
             <div class="wrapper_right">
                 <ul>
                     <li>
-                        <p>Zcash Mobile App</p>
-                        <span>Zcon 2022</span>
+                        <p><a href="https://z.cash/"  target="_blank">About Zcash</a></p>
+                        <span><a href="https://electriccoin.co/"  target="_blank">Electric Coin Company Site</a></br><a href="https://zfnd.org/"  target="_blank">Zcash Foundation Organization</a></span>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
-    
-        <!-- Footer -->
-        <section class="footer container">
-            <div class="row row-top">
-                <p>Portfolio & Resume Site</p>
-                <p>Joseph Van Geffen</p>
-                <p>Design is both a process and an outcome. Experience helps too :)</p>
-            </div>
-            <div class="row-mid">
-                <p>Want to create something amazing? (This should change via visits)</p>
-                <h1>Get in Touch (needs link)</h1>
-            </div>
-            <div class="row row-bottom">
-                <p>© 2023; All rights reserved.</p>
-                <ul>
-                    <li></li>
-                </ul>
-                <ul>
-                    <li>
-                        <a id="frame" href="#a" class="m-flip js-flip">
-                            <span class="m-flip_item">BADTRYP | </span>
-                            <span class="m-flip_item">BADTRYP | </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a id="frame" href="#a" class="m-flip js-flip">
-                            <span class="m-flip_item">Web3 | Gnars | Find me in the metaverse</span>
-                            <span class="m-flip_item">Decentraland / BYOPILLS / WilderWorld</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
+
+    <!-- Footer -->
+    <section class="footer container">
+        <div class="row row-bottom">
+            <p>Joseph Van Geffen</br>
+            Portfolio & Resume Site</br>
+            © 2023; All rights reserved.</p>
+
+            <ul>
+                <li></li>
+            </ul>
+            <ul>
+                <li>
+                    <a id="frame" href="#a" class="m-flip js-flip">
+                        <p>Design is both a process and an outcome. Experience helps too :)</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
 
 
     <!-- scripts -->
@@ -409,6 +440,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="js/flipText.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/splide.min.js"></script>
+    <script>
+        new Splide( '#image-carousel' ).mount();
+        new Splide( '#image-carousel2' ).mount();
+        new Splide( '#image-carousel-personas' ).mount();
+    </script>
+
 </body>
 
 </html>

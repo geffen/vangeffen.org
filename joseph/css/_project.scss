@@ -11,7 +11,7 @@
             position: relative;
 
             img {
-                border-radius: 50px;
+                border-radius: 12px;
                 cursor: pointer;
                 transition: scale cubic-bezier(0.19, 1, 0.22, 1) 1s;
                 width: 100%;
@@ -23,7 +23,7 @@
                 }
 
                 @include devices(tablet) {
-                    border-radius: 30px;
+                    border-radius: 8px;
                 }
 
                 @include devices(mobile) {

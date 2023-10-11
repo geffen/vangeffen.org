@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- Splide carousel -->
     <link rel="stylesheet" href="css/splide.min.css">
+    <link rel="stylesheet" href="css/splide-extension-video.min.css">
     <link rel="icon" href="images/favicon-zcash.png">
 </head>
 
@@ -343,7 +344,27 @@
 
                 <p>Now that we had battle tested applications and external feedback, we grew the team to support both Android and iOS. We created designs and code to support both light and dark modes, internationalization, and accessibility. ECC is still in the process of implementing designs and animations, and has recently released a second <a href="https://repo1.maven.org/maven2/cash/z/ecc/android/zcash-android-sdk/2.0.0" target="_blank">SDK</a>!</p>
                 <p>
-                    
+                    <!--<div class="splide"  id="videosamples">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=h3yElGC46O4&list=PLLeHsKj_ETQwg7Z_5R8P7rKJB79GEV-kw&index=1">
+                                <img src="assets/casestudy-zcash/zcashlogo.png">
+                              </li>
+                            <li class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=SJIG9Xe7gjM&list=PLLeHsKj_ETQwg7Z_5R8P7rKJB79GEV-kw&index=2">
+                              <img src="assets/casestudy-zcash/zcashlogo.png">
+                            </li>
+                            <li class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=h3yElGC46O4&list=PLLeHsKj_ETQwg7Z_5R8P7rKJB79GEV-kw&index=3">
+                              <img src="assets/casestudy-zcash/zcashlogo.png">
+                            </li>
+                            <li class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=h3yElGC46O4&list=PLLeHsKj_ETQwg7Z_5R8P7rKJB79GEV-kw&index=4">
+                                <img src="assets/casestudy-zcash/zcashlogo.png">
+                              </li>
+                              <li class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=h3yElGC46O4&list=PLLeHsKj_ETQwg7Z_5R8P7rKJB79GEV-kw&index=5">
+                                <img src="assets/casestudy-zcash/zcashlogo.png">
+                              </li>
+                          </ul>
+                        </div>
+                      </div>-->
                 </p>
 
                 <img src="assets/casestudy-zcash/zebra-drip.jpg" alt="Illustration of dripping ZEC Zebra" srcset="" style="border-radius: 0px;margin-top: 2vw;">
@@ -357,6 +378,10 @@
             </div>
             <div class="right">
                 <ul>
+                    <li>
+                        <h1><a href="https://www.youtube.com/watch?v=h3yElGC46O4&list=PLLeHsKj_ETQwg7Z_5R8P7rKJB79GEV-kw" target="_blank">Demos & Animation Examples</a></h1>
+                        <p>A youtube playlist with a handful of animation and interactions. There is also a full demo from an earlier build.</p>
+                    </li>
                     <li>
                         <h1><a href="https://www.youtube.com/watch?v=-lUhiFN6yiA" target="_blank">The Once and Future ECC Wallet</a></h1>
                         <p>A discussion on the ECC Wallet's past and future from Zcon3. Geffen and Pacu focus on the experience of building the app from scratch, the lessons they learned, and where they plan to go next. They dig into how NU5 evolved the mobile app and how user feedback in real situations has helped. Additionally, the expound on future features and known hurdles.</p>
@@ -422,10 +447,13 @@
     <script src="js/flipText.js"></script>
     <script src="js/main.js"></script>
     <script src="js/splide.min.js"></script>
+    
+    <script src="js/splide-extension-video.min.js"></script>
     <script>
         new Splide( '#image-carousel' ).mount();
         new Splide( '#image-carousel2' ).mount();
         new Splide( '#image-carousel-personas' ).mount();
+        new Splide( '#videosamples' ).mount( window.splide.Extensions );
     </script>
 
 </body>

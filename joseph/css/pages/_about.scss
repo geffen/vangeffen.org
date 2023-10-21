@@ -29,7 +29,7 @@
         }
 
         .left {
-            width: 25%;
+            width: 15%;
 
             @include devices(tablet) {
                 width: 100%;
@@ -66,7 +66,7 @@
         }
 
         .right {
-            width: 80%;
+            width: 85%;
 
             @include devices(tablet) {
                 width: 100%;

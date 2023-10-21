@@ -221,7 +221,7 @@ a {
   color: rgb(0, 0, 0);
   border: 1.5px solid #131417;
   border-radius: 20px;
-  padding: 0.4vw 1vw;
+  padding: 0.2vw 0.8vw;
   display: inline-block;
   font-size: 1.9vw;
   letter-spacing: -0.5px;
@@ -233,12 +233,12 @@ a {
 }
 @media only screen and (max-width: 1140px) {
   .md-button {
-    font-size: 2.6vw;
+    font-size: 2.2vw;
   }
 }
 @media only screen and (max-width: 912px) {
   .md-button {
-    font-size: 2vw;
+    font-size: 1.8vw;
   }
 }
 
@@ -309,7 +309,7 @@ a[target=_blank] {
 .incontent {
   float: right !important;
   margin-top: 0px !important;
-  width: 240px !important;
+  width: 120px !important;
   height: 120px !important;
   margin-left: 10px;
   border-radius: 0px !important;
@@ -1828,7 +1828,7 @@ nav .nav_btn {
   }
 }
 .about_wrapper .content .left {
-  width: 25%;
+  width: 15%;
 }
 @media only screen and (max-width: 912px) {
   .about_wrapper .content .left {
@@ -1896,7 +1896,7 @@ nav .nav_btn {
   }
 }
 .about_wrapper .content .right {
-  width: 80%;
+  width: 85%;
 }
 @media only screen and (max-width: 912px) {
   .about_wrapper .content .right {

@@ -399,11 +399,22 @@ a[target=_blank]{ color : black; display: inline;}
 .incontent {
     float:right !important;
     margin-top: 0px !important;
-    width:120px !important;
+    width:240px !important;
     height:120px !important;
     margin-left: 10px;
     border-radius: 0px !important;
 }
+
+.incontenttoo {
+    float:right !important;
+    margin-top: 0px !important;
+    width:200px !important;
+    height:100px !important;
+    margin-left: 10px;
+    border-radius: 0px !important;
+}
+
+
 
 /* components */
 @import "font";

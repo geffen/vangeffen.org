@@ -208,7 +208,7 @@ a {
 }
 
 .md-caption {
-  font-size: 0.7em;
+  font-size: inherit;
   line-height: 22px;
   line-height: 1.4rem;
   opacity: 0.7;
@@ -223,7 +223,7 @@ a {
   border-radius: 20px;
   padding: 0.2vw 0.8vw;
   display: inline-block;
-  font-size: 1.9vw;
+  font-size: inherit;
   letter-spacing: -0.5px;
   font-weight: lighter;
   line-height: 150%;
@@ -233,12 +233,12 @@ a {
 }
 @media only screen and (max-width: 1140px) {
   .md-button {
-    font-size: 2.2vw;
+    font-size: inherit;
   }
 }
 @media only screen and (max-width: 912px) {
   .md-button {
-    font-size: 1.8vw;
+    font-size: inherit;
   }
 }
 

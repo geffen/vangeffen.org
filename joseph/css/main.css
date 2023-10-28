@@ -1148,6 +1148,9 @@ nav .nav_btn {
     width: 100%;
   }
 }
+.about .wrapper .about_wrapper .content .left {
+  display: none;
+}
 .about .about_img {
   padding-top: 7.8vw;
   overflow: hidden;

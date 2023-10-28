@@ -1,6 +1,8 @@
 .about {
     @include containerV;
 
+   
+
     .wrapper {
         display: flex;
         gap: 13.5vw;
@@ -107,6 +109,10 @@
                 }
             }
         }
+        .about_wrapper .content .left {
+            display: none;
+            }
+
     }
 
     .about_img {

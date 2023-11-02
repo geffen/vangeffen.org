@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family: ManropeL, sans-serif;
     src: url(../fonts/Manrope-Light.ttf);
 }
@@ -11,6 +11,21 @@
 @font-face {
     font-family: ManropeM, sans-serif;
     src: url(../fonts/Manrope-Medium.ttf);
+}*/
+
+@font-face {
+    font-family: NovemberL, sans-serif;
+    src: url(../fonts/NovemberxsTRIAL-Light.otf);
+}
+
+@font-face {
+    font-family: NovemberR, sans-serif;
+    src: url(../fonts/NovemberxsTRIAL-Regular.otf);
+}
+
+@font-face {
+    font-family: NovemberM, sans-serif;
+    src: url(../fonts/NovemberxsTRIAL-Medium.otf);
 }
 
 
@@ -123,7 +138,7 @@
     }
 
     @include devices(mobile) {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 }
 
@@ -159,6 +174,6 @@
     }
 
     @include devices(mobile) {
-        font-size: 2.4vw;
+        font-size: 3.2vw; /* 2.4 orig */
     }
 }

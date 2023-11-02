@@ -8,7 +8,7 @@
 
 html,
 body {
-  font-family: ManropeM, sans-serif;
+  font-family: NovemberM, sans-serif;
   background: #F5F5F5;
   width: 100%;
   overflow-x: hidden;
@@ -81,7 +81,7 @@ section {
 }
 @media only screen and (max-width: 670px) {
   .button a {
-    font-size: 2.6vw;
+    font-size: 3.2vw; /* 2.6 */
   }
 }
 
@@ -325,17 +325,31 @@ a[target=_blank] {
 }
 
 /* components */
+/*@font-face {
+    font-family: ManropeL, sans-serif;
+    src: url(../fonts/Manrope-Light.ttf);
+}
+
 @font-face {
-  font-family: ManropeL, sans-serif;
-  src: url(../fonts/Manrope-Light.ttf);
+    font-family: ManropeR, sans-serif;
+    src: url(../fonts/Manrope-Regular.ttf);
+}
+
+@font-face {
+    font-family: ManropeM, sans-serif;
+    src: url(../fonts/Manrope-Medium.ttf);
+}*/
+@font-face {
+  font-family: NovemberL, sans-serif;
+  src: url(../fonts/NovemberxsTRIAL-Light.otf);
 }
 @font-face {
-  font-family: ManropeR, sans-serif;
-  src: url(../fonts/Manrope-Regular.ttf);
+  font-family: NovemberR, sans-serif;
+  src: url(../fonts/NovemberxsTRIAL-Regular.otf);
 }
 @font-face {
-  font-family: ManropeM, sans-serif;
-  src: url(../fonts/Manrope-Medium.ttf);
+  font-family: NovemberM, sans-serif;
+  src: url(../fonts/NovemberxsTRIAL-Medium.otf);
 }
 nav {
   position: fixed;
@@ -356,7 +370,7 @@ nav .nav_logo p:nth-child(1) {
   font-size: 1.04vw;
   letter-spacing: -0.25px;
   line-height: 150%;
-  font-family: ManropeM, sans-serif;
+  font-family: NovemberM, sans-serif;
 }
 @media only screen and (max-width: 1140px) {
   nav .nav_logo p:nth-child(1) {
@@ -372,7 +386,7 @@ nav .nav_logo p:nth-child(1) {
 }
 @media only screen and (max-width: 670px) {
   nav .nav_logo p:nth-child(1) {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 }
 nav .nav_logo p:nth-child(2) {
@@ -394,7 +408,7 @@ nav .nav_logo p:nth-child(2) {
 }
 @media only screen and (max-width: 670px) {
   nav .nav_logo p:nth-child(2) {
-    font-size: 2.4vw;
+    font-size: 3.2vw; /* 2.4 orig */
   }
 }
 @media only screen and (max-width: 670px) {
@@ -484,7 +498,7 @@ nav .nav_socials p {
 }
 @media only screen and (max-width: 670px) {
   nav .nav_socials p {
-    font-size: 2.4vw;
+    font-size: 3.2vw; /* 2.4 orig */
   }
 }
 nav .nav_socials ul {
@@ -514,7 +528,7 @@ nav .nav_socials ul li a {
 }
 @media only screen and (max-width: 670px) {
   nav .nav_socials ul li a {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 }
 @media only screen and (max-width: 912px) {
@@ -681,7 +695,7 @@ nav .nav_btn {
 }
 @media only screen and (max-width: 670px) {
   .hero .left {
-    /* width: 100%; */
+    width: 100%; /* This creates an upset mobile safari */
     height: 25vw;
   }
 }
@@ -704,7 +718,7 @@ nav .nav_btn {
 }
 @media only screen and (max-width: 670px) {
   .hero .left p:nth-child(1) {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 }
 .hero .left p:nth-child(2) {
@@ -863,7 +877,7 @@ nav .nav_btn {
 }
 @media only screen and (max-width: 670px) {
   .project .project_wrapper .case .case_text p {
-    font-size: 2.4vw;
+    font-size: 3.2vw; /* 2.4 orig */
   }
 }
 @media only screen and (max-width: 912px) {
@@ -1109,7 +1123,7 @@ nav .nav_btn {
 }
 @media only screen and (max-width: 670px) {
   .about .wrapper .wrapper_right > div p {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 }
 @media only screen and (max-width: 1140px) {
@@ -1361,7 +1375,7 @@ nav .nav_btn {
 }
 @media only screen and (max-width: 670px) {
   .footer .row-top p:nth-child(2) {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 }
 .footer .row-mid {
@@ -1480,7 +1494,7 @@ nav .nav_btn {
 }
 @media only screen and (max-width: 670px) {
   .footer .row-bottom ul li a {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 }
 
@@ -1559,7 +1573,7 @@ nav .nav_btn {
 }
 @media only screen and (max-width: 670px) {
   .contact .wrapper .content .top p {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 }
 .contact .wrapper .content .top img {
@@ -1991,7 +2005,7 @@ nav .nav_btn {
 }
 @media only screen and (max-width: 670px) {
   .about_wrapper #about .right p {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 }
 @media only screen and (max-width: 1140px) {
@@ -2396,7 +2410,7 @@ nav .nav_btn {
 }
 @media only screen and (max-width: 670px) {
   .case_wrapper .case .case_text p {
-    font-size: 2.4vw;
+    font-size: 3.2vw; /* 2.4 orig */
   }
 }
 @media only screen and (max-width: 912px) {

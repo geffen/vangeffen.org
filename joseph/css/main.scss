@@ -4,9 +4,12 @@ $grey: #9FA0A3;
 $white: #fff;
 $bgColor: #F5F5F5;
 /* fonts */
-$fontL: ManropeL, sans-serif;
-$fontR: ManropeR, sans-serif;
-$fontM: ManropeM, sans-serif;
+//$fontL: ManropeL, sans-serif;
+//$fontR: ManropeR, sans-serif;
+//$fontM: ManropeM, sans-serif;
+$fontL: NovemberL, sans-serif;
+$fontR: NovemberR, sans-serif;
+$fontM: NovemberM, sans-serif;
 
 * {
     margin: 0;
@@ -170,7 +173,7 @@ section {
         }
 
         @include devices(mobile) {
-            font-size: 2.6vw;
+            font-size: 3.2vw; /* 2.6 */
         }
     }
 }

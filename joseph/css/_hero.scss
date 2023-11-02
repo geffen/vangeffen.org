@@ -27,7 +27,7 @@
         }
         @include devices(mobile) {
             width: 100%; /* This creates an upset mobile safari */
-            height: 25vw;
+            height: auto; /* 25vw */
         }
         p:nth-child(1) {
             @include font20;

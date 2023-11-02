@@ -696,7 +696,7 @@ nav .nav_btn {
 @media only screen and (max-width: 670px) {
   .hero .left {
     width: 100%; /* This creates an upset mobile safari */
-    height: 25vw;
+    height: auto; /* 25vw */
   }
 }
 .hero .left p:nth-child(1) {

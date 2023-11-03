@@ -26,8 +26,18 @@
             width: 70%;
         }
         @include devices(mobile) {
-            width: 100%; /* This creates an upset mobile safari */
-            height: auto; /* 25vw */
+            /* Safari Mobile (iPhone) hack - fix before Apple removes -webkit-touch-callout */
+            @supports (-webkit-touch-callout: none) {
+                /* CSS specific to iOS devices */ 
+                width: 100%; /* This creates an upset mobile safari */
+                height: auto; /* 25vw */
+              }
+              
+              @supports not (-webkit-touch-callout: none) {
+                /* CSS for other than iOS devices */ 
+                width: 100%; /* This creates an upset mobile safari */
+                height: auto;
+              }
         }
         p:nth-child(1) {
             @include font20;
@@ -49,12 +59,26 @@
     }
 
     .right {
-        width: 80%;
+        //width: 80%;
         @include devices(tablet) {
             width: 100%;
         }
         h1 {
             @include font94;
+        }
+        @include devices(mobile) {
+            /* Safari Mobile (iPhone) hack - fix before Apple removes -webkit-touch-callout */
+            @supports (-webkit-touch-callout: none) {
+                /* CSS specific to iOS devices */ 
+                width: 90%; /* This creates an upset mobile safari */
+                height: auto; /* 25vw */
+                box-sizing:content-box;
+              }
+              
+              @supports not (-webkit-touch-callout: none) {
+                /* CSS for other than iOS devices */ 
+                width: 80%; /* This creates an upset mobile safari */
+              }
         }
     }
 }

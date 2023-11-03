@@ -695,8 +695,21 @@ nav .nav_btn {
 }
 @media only screen and (max-width: 670px) {
   .hero .left {
-    width: 100%; /* This creates an upset mobile safari */
-    height: auto; /* 25vw */
+    /* Safari Mobile (iPhone) hack - fix before Apple removes -webkit-touch-callout */
+  }
+  @supports (-webkit-touch-callout: none) {
+    .hero .left {
+      /* CSS specific to iOS devices */
+      width: 100%; /* This creates an upset mobile safari */
+      height: auto; /* 25vw */
+    }
+  }
+  @supports not (-webkit-touch-callout: none) {
+    .hero .left {
+      /* CSS for other than iOS devices */
+      width: 100%; /* This creates an upset mobile safari */
+      height: auto;
+    }
   }
 }
 .hero .left p:nth-child(1) {
@@ -754,9 +767,6 @@ nav .nav_btn {
     margin-left: 8vw;
   }
 }
-.hero .right {
-  width: 80%;
-}
 @media only screen and (max-width: 912px) {
   .hero .right {
     width: 100%;
@@ -783,6 +793,25 @@ nav .nav_btn {
   .hero .right h1 {
     font-size: 8vw;
     letter-spacing: -1px;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .hero .right {
+    /* Safari Mobile (iPhone) hack - fix before Apple removes -webkit-touch-callout */
+  }
+  @supports (-webkit-touch-callout: none) {
+    .hero .right {
+      /* CSS specific to iOS devices */
+      width: 90%; /* This creates an upset mobile safari */
+      height: auto; /* 25vw */
+      box-sizing: content-box;
+    }
+  }
+  @supports not (-webkit-touch-callout: none) {
+    .hero .right {
+      /* CSS for other than iOS devices */
+      width: 80%; /* This creates an upset mobile safari */
+    }
   }
 }
 

@@ -1,5 +1,5 @@
 .hero {
-    height: 100vh;
+    height: 100vh; /* 100vh */
     display: flex;
     align-items: last baseline;
     gap: 13.5vw;
@@ -10,7 +10,7 @@
         gap: 5vw;
     }
     @include devices(mobile) {
-        height: 120vw;
+        height: 133vw;
         gap: 7vw;
     }
     .left {
@@ -20,10 +20,10 @@
         flex-direction: column;
         justify-content: space-between;
         @include devices(laptop) {
-            height: 17vw;
+            height: auto;
         }
         @include devices(tablet) {
-            width: 70%;
+            width: 90%;
         }
         @include devices(mobile) {
             /* Safari Mobile (iPhone) hack - fix before Apple removes -webkit-touch-callout */
@@ -59,7 +59,7 @@
     }
 
     .right {
-        //width: 80%;
+        width: 80%;
         @include devices(tablet) {
             width: 100%;
         }

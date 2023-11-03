@@ -657,7 +657,7 @@ nav .nav_btn {
 }
 
 .hero {
-  height: 100vh;
+  height: 100vh; /* 100vh */
   display: flex;
   align-items: last baseline;
   gap: 13.5vw;
@@ -672,7 +672,7 @@ nav .nav_btn {
 }
 @media only screen and (max-width: 670px) {
   .hero {
-    height: 120vw;
+    height: 133vw;
     gap: 7vw;
   }
 }
@@ -685,12 +685,12 @@ nav .nav_btn {
 }
 @media only screen and (max-width: 1140px) {
   .hero .left {
-    height: 17vw;
+    height: auto;
   }
 }
 @media only screen and (max-width: 912px) {
   .hero .left {
-    width: 70%;
+    width: 90%;
   }
 }
 @media only screen and (max-width: 670px) {
@@ -766,6 +766,9 @@ nav .nav_btn {
   .hero .left p:nth-child(2) span {
     margin-left: 8vw;
   }
+}
+.hero .right {
+  width: 80%;
 }
 @media only screen and (max-width: 912px) {
   .hero .right {

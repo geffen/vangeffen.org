@@ -23,7 +23,10 @@
             height: auto;
         }
         @include devices(tablet) {
-            width: 100%;
+            width: 90%; /* This creates an upset mobile safari */
+                height: auto; /* 25vw */
+                box-sizing:content-box;
+                margin:0 auto;
         }
         @include devices(mobile) {
             /* Safari Mobile (iPhone) hack - fix before Apple removes -webkit-touch-callout */
@@ -37,7 +40,7 @@
               
               @supports not (-webkit-touch-callout: none) {
                 /* CSS for other than iOS devices */ 
-                width: 100%; /* This creates an upset mobile safari */
+                width: 90%; /* This creates an upset mobile safari */
                 height: auto;
                 box-sizing:content-box;
                 margin:0 auto;
@@ -63,9 +66,12 @@
     }
 
     .right {
-        width: 80%;
+        width: 90%;
         @include devices(tablet) {
-            width: 100%;
+            width: 90%; /* This creates an upset mobile safari */
+                height: auto; /* 25vw */
+                box-sizing:content-box;
+                margin:0 auto;
         }
         h1 {
             @include font94;

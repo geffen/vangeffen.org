@@ -73,6 +73,7 @@
                 width: 90%; /* This creates an upset mobile safari */
                 height: auto; /* 25vw */
                 box-sizing:content-box;
+                margin:0 auto;
               }
               
               @supports not (-webkit-touch-callout: none) {

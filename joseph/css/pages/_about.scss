@@ -21,12 +21,13 @@
         @include containerV;
         display: flex;
         align-items: first baseline;
-        gap: 13.5vw;
+        gap: 5vw;
 
         @include devices(tablet) {
             flex-direction: column;
             gap: 5vw;
         }
+        
 
         .left {
             width: 15%;
@@ -67,7 +68,7 @@
         }
 
         .right {
-            width: 85%;
+            width: 80%;
 
             @include devices(tablet) {
                 width: 100%;

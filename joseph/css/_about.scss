@@ -80,6 +80,11 @@
                 }
             }
 
+            p {
+                margin-top: 2vw;
+                
+            }
+
             >div {
                 @include mT30;
                 display: flex;

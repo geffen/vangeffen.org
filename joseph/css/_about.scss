@@ -24,6 +24,11 @@
                 width: 100%;
             }
 
+            @include devices(mobile) {
+                width: 100%;
+                display:none;
+            }
+
             span {
                 color: $grey;
             }

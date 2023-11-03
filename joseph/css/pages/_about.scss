@@ -32,7 +32,8 @@
             width: 15%;
 
             @include devices(tablet) {
-                width: 100%;
+                width: 0%;
+                display:none;
             }
 
             >div {

@@ -160,11 +160,11 @@
             }
 
             @include devices(tablet) {
-                border-radius: 30px;
+                border-radius: 12px;
             }
 
             @include devices(mobile) {
-                border-radius: 20px;
+                border-radius: 12px;
             }
         }
 

@@ -397,6 +397,7 @@ a {
 
 //_blank URL HREFS
 a[target=_blank]{ color : black; display: inline;}
+a[class=nocolor]{ color : black; display: inline;}
 
 //IN CONTENT images
 .incontent {
@@ -424,7 +425,7 @@ a[target=_blank]{ color : black; display: inline;}
 @import "nav";
 @import "hero";
 @import "project";
-@import "about";
+//@import "about";
 @import "awward";
 @import "footer";
 @import "contact";

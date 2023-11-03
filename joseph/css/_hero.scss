@@ -30,7 +30,7 @@
         }
         @include devices(mobile) {
 
-            width: 90%; /* This creates an upset mobile safari */
+            width: 100%; /* This creates an upset mobile safari */
             height: auto;
             box-sizing:content-box;
             margin:0 auto;
@@ -66,8 +66,8 @@
             @include font94;
         }
         @include devices(mobile) {
-            
-            width: 90%; /* This creates an upset mobile safari */
+
+            width: 100%; /* This creates an upset mobile safari */
             height: auto;
             box-sizing:content-box;
             margin:0 auto;

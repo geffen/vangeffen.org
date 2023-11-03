@@ -690,26 +690,18 @@ nav .nav_btn {
 }
 @media only screen and (max-width: 912px) {
   .hero .left {
-    width: 100%;
+    width: 90%; /* This creates an upset mobile safari */
+    height: auto; /* 25vw */
+    box-sizing: content-box;
+    margin: 0 auto;
   }
 }
 @media only screen and (max-width: 670px) {
   .hero .left {
-    /* Safari Mobile (iPhone) hack - fix before Apple removes -webkit-touch-callout */
-  }
-  @supports (-webkit-touch-callout: none) {
-    .hero .left {
-      /* CSS specific to iOS devices */
-      width: 100%; /* This creates an upset mobile safari */
-      height: auto; /* 25vw */
-    }
-  }
-  @supports not (-webkit-touch-callout: none) {
-    .hero .left {
-      /* CSS for other than iOS devices */
-      width: 100%; /* This creates an upset mobile safari */
-      height: auto;
-    }
+    width: 90%; /* This creates an upset mobile safari */
+    height: auto;
+    box-sizing: content-box;
+    margin: 0 auto;
   }
 }
 .hero .left p:nth-child(1) {
@@ -768,11 +760,14 @@ nav .nav_btn {
   }
 }
 .hero .right {
-  width: 80%;
+  width: 90%;
 }
 @media only screen and (max-width: 912px) {
   .hero .right {
-    width: 100%;
+    width: 90%; /* This creates an upset mobile safari */
+    height: auto; /* 25vw */
+    box-sizing: content-box;
+    margin: 0 auto;
   }
 }
 .hero .right h1 {
@@ -800,22 +795,10 @@ nav .nav_btn {
 }
 @media only screen and (max-width: 670px) {
   .hero .right {
-    /* Safari Mobile (iPhone) hack - fix before Apple removes -webkit-touch-callout */
-  }
-  @supports (-webkit-touch-callout: none) {
-    .hero .right {
-      /* CSS specific to iOS devices */
-      width: 90%; /* This creates an upset mobile safari */
-      height: auto; /* 25vw */
-      box-sizing: content-box;
-      margin: 0 auto;
-    }
-  }
-  @supports not (-webkit-touch-callout: none) {
-    .hero .right {
-      /* CSS for other than iOS devices */
-      width: 90%; /* This creates an upset mobile safari */
-    }
+    width: 90%; /* This creates an upset mobile safari */
+    height: auto;
+    box-sizing: content-box;
+    margin: 0 auto;
   }
 }
 

@@ -690,7 +690,7 @@ nav .nav_btn {
 }
 @media only screen and (max-width: 912px) {
   .hero .left {
-    width: 90%;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 670px) {
@@ -814,7 +814,7 @@ nav .nav_btn {
   @supports not (-webkit-touch-callout: none) {
     .hero .right {
       /* CSS for other than iOS devices */
-      width: 80%; /* This creates an upset mobile safari */
+      width: 90%; /* This creates an upset mobile safari */
     }
   }
 }

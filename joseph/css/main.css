@@ -329,6 +329,15 @@ a[class=nocolor] {
   border-radius: 0px !important;
 }
 
+.geffendesigner {
+  float: right !important;
+  margin-top: 0px !important;
+  width: 260px !important;
+  height: 85px !important;
+  margin-left: 10px;
+  border-radius: 0px !important;
+}
+
 /* components */
 /*@font-face {
     font-family: ManropeL, sans-serif;

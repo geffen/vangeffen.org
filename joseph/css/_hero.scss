@@ -1,5 +1,5 @@
 .hero {
-    height: 100vh; /* 100vh */
+    height: 80vh; /* 100vh */
     display: flex;
     align-items: last baseline;
     gap: 13.5vw;
@@ -10,8 +10,9 @@
         gap: 5vw;
     }
     @include devices(mobile) {
-        height: 133vw;
+        height: 98vw;
         gap: 7vw;
+        padding-bottom: 0vw;
     }
     .left {
         width: 25%;
@@ -63,7 +64,7 @@
                 margin:0 auto;
         }
         h1 {
-            @include font94;
+            @include font72;
         }
         @include devices(mobile) {
 

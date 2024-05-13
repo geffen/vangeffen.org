@@ -11,34 +11,6 @@ $fontL: NovemberL, sans-serif;
 $fontR: NovemberR, sans-serif;
 $fontM: NovemberM, sans-serif;
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html,
-body {
-    font-family: $fontM;
-    background: $bgColor;
-    width: 100%;
-    overflow-x: hidden;
-    color: $black;
-}
-
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-}
-
-section {
-    width: 100%;
-    overflow: hidden
-}
-
 /*- breakpoints -*/
 @mixin devices ($breakpoint) {
 
@@ -60,6 +32,56 @@ section {
         }
     }
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: $fontM;
+    background: $bgColor;
+    width: 100%;
+    overflow-x: hidden;
+    color: $black;
+}
+#mainpage {
+    background-image: url("../images/klee-bkgd.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    overflow-x: hidden;
+    color: #131417;
+        @include devices(laptop) {
+            overflow-x: hidden;
+        }
+
+        @include devices(tablet) {
+            background-image: url("../images/klee-bkgd-tablet.jpg");
+            overflow-x: hidden;
+        }
+
+        @include devices(mobile) {
+            overflow-x: hidden;
+        }
+  }
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    width: 100%;
+    overflow: hidden
+}
+
+
 
 /*- Margins n Padding */
 .container {

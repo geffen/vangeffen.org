@@ -1,5 +1,6 @@
 /* colors */
 /* fonts */
+/*- breakpoints -*/
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +16,31 @@ body {
   color: #131417;
 }
 
+#mainpage {
+  background-image: url("../images/klee-bkgd.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  overflow-x: hidden;
+  color: #131417;
+}
+@media only screen and (max-width: 1140px) {
+  #mainpage {
+    overflow-x: hidden;
+  }
+}
+@media only screen and (max-width: 912px) {
+  #mainpage {
+    background-image: url("../images/klee-bkgd-tablet.jpg");
+    overflow-x: hidden;
+  }
+}
+@media only screen and (max-width: 670px) {
+  #mainpage {
+    overflow-x: hidden;
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -28,7 +54,6 @@ section {
   overflow: hidden;
 }
 
-/*- breakpoints -*/
 /*- Margins n Padding */
 .container {
   padding-left: 5.2vw;
@@ -404,25 +429,26 @@ nav .nav_logo p:nth-child(1) {
   }
 }
 nav .nav_logo p:nth-child(2) {
-  font-size: 0.8vw;
-  letter-spacing: 0px;
-  margin-top: 0.26vw;
+  font-size: 0.9vw;
+  letter-spacing: -0.25px;
+  font-family: NovemberM, sans-serif;
+  margin-top: 0vw;
   color: #9FA0A3;
 }
 @media only screen and (max-width: 1140px) {
   nav .nav_logo p:nth-child(2) {
-    font-size: 1vw;
+    font-size: 1.1vw;
     letter-spacing: 0.5px;
   }
 }
 @media only screen and (max-width: 912px) {
   nav .nav_logo p:nth-child(2) {
-    font-size: 1.6vw;
+    font-size: 1.8vw;
   }
 }
 @media only screen and (max-width: 670px) {
   nav .nav_logo p:nth-child(2) {
-    font-size: 3.2vw; /* 2.4 orig */
+    font-size: 2.6vw;
   }
 }
 @media only screen and (max-width: 670px) {
@@ -671,7 +697,7 @@ nav .nav_btn {
 }
 
 .hero {
-  height: 100vh; /* 100vh */
+  height: 80vh; /* 100vh */
   display: flex;
   align-items: last baseline;
   gap: 13.5vw;
@@ -686,8 +712,9 @@ nav .nav_btn {
 }
 @media only screen and (max-width: 670px) {
   .hero {
-    height: 133vw;
+    height: 98vw;
     gap: 7vw;
+    padding-bottom: 0vw;
   }
 }
 .hero .left {
@@ -785,26 +812,19 @@ nav .nav_btn {
   }
 }
 .hero .right h1 {
-  font-size: 4.89vw;
-  letter-spacing: -3px;
+  font-size: 3.75vw;
+  letter-spacing: -2px;
   font-weight: lighter;
-}
-@media only screen and (max-width: 1140px) {
-  .hero .right h1 {
-    font-size: 5vw;
-    letter-spacing: -2px;
-    line-height: 130%;
-  }
 }
 @media only screen and (max-width: 912px) {
   .hero .right h1 {
-    font-size: 6.5vw;
+    font-size: 5.5vw;
+    letter-spacing: -1px;
   }
 }
 @media only screen and (max-width: 670px) {
   .hero .right h1 {
-    font-size: 8vw;
-    letter-spacing: -1px;
+    font-size: 7vw;
   }
 }
 @media only screen and (max-width: 670px) {

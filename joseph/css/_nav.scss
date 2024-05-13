@@ -19,8 +19,10 @@ nav {
         }
 
         p:nth-child(2) {
-            @include font16;
-            margin-top: 0.26vw;
+            @include font18;
+            font-family: $fontM;
+            margin-top: 0vw;
+            //margin-top: 0.26vw;
             color: $grey;
 
             @include devices(mobile) {

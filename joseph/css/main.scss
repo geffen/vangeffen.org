@@ -169,17 +169,20 @@ section {
     border-radius: 0px;
     width: fit-content;
     cursor: pointer;
-
+    width: 12vw;
+    
     @include devices(laptop) {
         padding: 1vw 1.5vw;
     }
 
     @include devices(tablet) {
         padding: 1.8vw 3.6vw;
+        width: 23vw;
     }
 
     @include devices(mobile) {
-        padding: 2vw 4vw;
+        padding: 2vw 2vw;
+        width: 32vw;
     }
 
     a {

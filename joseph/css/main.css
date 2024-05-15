@@ -74,6 +74,7 @@ section {
   width: -moz-fit-content;
   width: fit-content;
   cursor: pointer;
+  width: 12vw;
 }
 @media only screen and (max-width: 1140px) {
   .button {
@@ -83,11 +84,13 @@ section {
 @media only screen and (max-width: 912px) {
   .button {
     padding: 1.8vw 3.6vw;
+    width: 23vw;
   }
 }
 @media only screen and (max-width: 670px) {
   .button {
-    padding: 2vw 4vw;
+    padding: 2vw 2vw;
+    width: 32vw;
   }
 }
 .button a {
@@ -454,6 +457,21 @@ nav .nav_logo p:nth-child(2) {
 @media only screen and (max-width: 670px) {
   nav .nav_logo p:nth-child(2) {
     margin-top: 0vw;
+  }
+}
+@media only screen and (max-width: 1140px) {
+  nav .nav_logo {
+    width: 22vw;
+  }
+}
+@media only screen and (max-width: 912px) {
+  nav .nav_logo {
+    width: 49vw;
+  }
+}
+@media only screen and (max-width: 670px) {
+  nav .nav_logo {
+    width: 50vw;
   }
 }
 nav .nav_links {

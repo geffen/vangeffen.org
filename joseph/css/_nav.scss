@@ -29,6 +29,19 @@ nav {
                 margin-top: 0vw;
             }
         }
+        @include devices(laptop) {
+            
+            width:22vw;
+        }
+
+        @include devices(tablet) {
+            width:49vw;
+        }
+
+        @include devices(mobile) {
+            width:50vw;
+        }
+
     }
 
     .nav_links {

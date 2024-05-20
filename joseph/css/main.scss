@@ -98,11 +98,11 @@ section {
     padding-top: 7.8vw;
 
     @include devices(tablet) {
-        padding-top: 15vw;
+        //padding-top: 15vw;
     }
 
     @include devices(mobile) {
-        padding-top: 20vw;
+        padding-top: 10vw;
     }
 }
 

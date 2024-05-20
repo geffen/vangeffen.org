@@ -1008,14 +1008,9 @@ nav .nav_btn {
 .about {
   padding-top: 7.8vw;
 }
-@media only screen and (max-width: 912px) {
-  .about {
-    padding-top: 15vw;
-  }
-}
 @media only screen and (max-width: 670px) {
   .about {
-    padding-top: 20vw;
+    padding-top: 10vw;
   }
 }
 .about .wrapper {
@@ -1246,14 +1241,9 @@ nav .nav_btn {
   padding-top: 7.8vw;
   overflow: hidden;
 }
-@media only screen and (max-width: 912px) {
-  .about .about_img {
-    padding-top: 15vw;
-  }
-}
 @media only screen and (max-width: 670px) {
   .about .about_img {
-    padding-top: 20vw;
+    padding-top: 10vw;
   }
 }
 @media only screen and (max-width: 670px) {
@@ -1866,14 +1856,9 @@ nav .nav_btn {
   align-items: center;
   padding-top: 13.5vw;
 }
-@media only screen and (max-width: 912px) {
-  .about_header {
-    padding-top: 25vw;
-  }
-}
 @media only screen and (max-width: 670px) {
   .about_header {
-    padding-top: 30vw;
+    padding-top: 23vw;
   }
 }
 .about_header p {
@@ -1905,14 +1890,9 @@ nav .nav_btn {
   align-items: first baseline;
   gap: 5vw;
 }
-@media only screen and (max-width: 912px) {
-  .about_wrapper .content {
-    padding-top: 15vw;
-  }
-}
 @media only screen and (max-width: 670px) {
   .about_wrapper .content {
-    padding-top: 20vw;
+    padding-top: 10vw;
   }
 }
 @media only screen and (max-width: 912px) {
@@ -2203,7 +2183,7 @@ nav .nav_btn {
 }
 @media only screen and (max-width: 912px) {
   .case_header {
-    padding-top: 25vw;
+    padding-top: 20vw;
   }
 }
 @media only screen and (max-width: 670px) {
@@ -2385,14 +2365,9 @@ nav .nav_btn {
   background: #F5F5F5;
   position: relative;
 }
-@media only screen and (max-width: 912px) {
-  .case_wrapper {
-    padding-top: 15vw;
-  }
-}
 @media only screen and (max-width: 670px) {
   .case_wrapper {
-    padding-top: 20vw;
+    padding-top: 10vw;
   }
 }
 @media only screen and (max-width: 912px) {

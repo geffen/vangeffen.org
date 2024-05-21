@@ -2,11 +2,11 @@
     padding-top: 13.5vw;
 
     @include devices(tablet) {
-        padding-top: 20vw;
+        //padding-top: 20vw;
     }
 
     @include devices(mobile) {
-        padding-top: 30vw;
+        padding-top: 20vw;
     }
 
     p {

@@ -87,7 +87,7 @@
 
             >div {
                 @include mT30;
-                display: flex;
+                //display: flex;
                 justify-content: space-between;
                 align-items: end;
 
@@ -112,6 +112,7 @@
                 a {
                     color: $grey;
                     @include font18;
+                    text-align:center;
 
                     @include devices(mobile) {
                         width: 100%;

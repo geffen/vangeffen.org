@@ -170,6 +170,7 @@ section {
     width: fit-content;
     cursor: pointer;
     width: 12vw;
+    display:block;
     
     @include devices(laptop) {
         padding: 1vw 1.5vw;

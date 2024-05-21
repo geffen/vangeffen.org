@@ -1,8 +1,17 @@
 .about {
     @include containerV;
+    padding-top: 3.2vw;
+    @include devices(tablet) {
+        padding-top: 3.4vw;
+    }
+    @include devices(mobile) {
+        padding-top: 2vw;
+    }
+    
+
     .wrapper {
         display: flex;
-        gap: 13.5vw;
+        //gap: 13.5vw;
 
         @include devices(tablet) {
             flex-direction: column;
@@ -53,7 +62,7 @@
         }
 
         .wrapper_right {
-            width: 80%;
+            width: 100%;
 
             @include devices(tablet) {
                 width: 100%;
@@ -128,6 +137,7 @@
         @include containerV;
         overflow: hidden;
 
+        padding-top:4.8vh;
         @include devices(mobile) {
             height: 50vh;
         }

@@ -743,7 +743,7 @@ nav .nav_btn {
 }
 @media only screen and (max-width: 670px) {
   .hero {
-    height: 88vw;
+    height: 96vw;
     gap: 7vw;
     padding-bottom: 0vw;
   }
@@ -1020,15 +1020,25 @@ nav .nav_btn {
 
 .about {
   padding-top: 7.8vw;
+  padding-top: 3.2vw;
 }
 @media only screen and (max-width: 670px) {
   .about {
     padding-top: 10vw;
   }
 }
+@media only screen and (max-width: 912px) {
+  .about {
+    padding-top: 3.4vw;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .about {
+    padding-top: 2vw;
+  }
+}
 .about .wrapper {
   display: flex;
-  gap: 13.5vw;
 }
 @media only screen and (max-width: 912px) {
   .about .wrapper {
@@ -1115,7 +1125,7 @@ nav .nav_btn {
   }
 }
 .about .wrapper .wrapper_right {
-  width: 80%;
+  width: 100%;
 }
 @media only screen and (max-width: 912px) {
   .about .wrapper .wrapper_right {
@@ -1255,6 +1265,7 @@ nav .nav_btn {
 .about .about_img {
   padding-top: 7.8vw;
   overflow: hidden;
+  padding-top: 4.8vh;
 }
 @media only screen and (max-width: 670px) {
   .about .about_img {

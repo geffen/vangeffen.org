@@ -1,16 +1,22 @@
 .hero {
-    height: 80vh; /* 100vh */
+    height: 82vh; /* 100vh */
     display: flex;
     align-items: last baseline;
     gap: 13.5vw;
-    padding-bottom: 5.2vw;
+    padding-bottom: 2vw;
+    @include devices(laptop) {
+        height: 60vw;
+        gap: 5vw;
+        padding-bottom: 0vw;
+    }
     @include devices(tablet) {
         height: 90vw;
-        flex-direction: column-reverse;
+        //flex-direction: column-reverse;
         gap: 5vw;
+        padding-bottom: 0vw;
     }
     @include devices(mobile) {
-        height: 98vw;
+        height: 88vw;
         gap: 7vw;
         padding-bottom: 0vw;
     }

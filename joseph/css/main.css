@@ -470,7 +470,7 @@ nav .nav_logo p:nth-child(2) {
   nav .nav_logo {
     width: auto;
     background-color: #F5F5F5;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.65);
     padding: 1vw 2vw 1vw 2vw;
   }
 }
@@ -721,22 +721,29 @@ nav .nav_btn {
 }
 
 .hero {
-  height: 80vh; /* 100vh */
+  height: 82vh; /* 100vh */
   display: flex;
   align-items: last baseline;
   gap: 13.5vw;
-  padding-bottom: 5.2vw;
+  padding-bottom: 2vw;
+}
+@media only screen and (max-width: 1140px) {
+  .hero {
+    height: 60vw;
+    gap: 5vw;
+    padding-bottom: 0vw;
+  }
 }
 @media only screen and (max-width: 912px) {
   .hero {
     height: 90vw;
-    flex-direction: column-reverse;
     gap: 5vw;
+    padding-bottom: 0vw;
   }
 }
 @media only screen and (max-width: 670px) {
   .hero {
-    height: 98vw;
+    height: 88vw;
     gap: 7vw;
     padding-bottom: 0vw;
   }
@@ -1038,6 +1045,7 @@ nav .nav_btn {
   font-size: 0.9vw;
   letter-spacing: -0.25px;
   width: 25%;
+  display: none;
 }
 @media only screen and (max-width: 1140px) {
   .about .wrapper .wrapper_left {
@@ -1058,6 +1066,7 @@ nav .nav_btn {
 @media only screen and (max-width: 912px) {
   .about .wrapper .wrapper_left {
     width: 100%;
+    display: none;
   }
 }
 @media only screen and (max-width: 670px) {

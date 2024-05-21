@@ -1,8 +1,5 @@
 .about {
     @include containerV;
-
-   
-
     .wrapper {
         display: flex;
         gap: 13.5vw;
@@ -19,9 +16,10 @@
         .wrapper_left {
             @include font18;
             width: 25%;
-
+            display: none;
             @include devices(tablet) {
                 width: 100%;
+                display: none;
             }
 
             @include devices(mobile) {

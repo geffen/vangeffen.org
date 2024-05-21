@@ -31,14 +31,13 @@ nav {
             }
         }
         @include devices(laptop) {
-            
             width:22vw;
         }
 
         @include devices(tablet) {
             width:auto;
             background-color: #F5F5F5;
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(255, 255, 255, 0.65);
             padding:1vw 2vw 1vw 2vw;
         }
 

@@ -18,7 +18,7 @@ tl.to(".nav_logo, .nav_socials", {
 });
 
 // img animation
-
+/*
 var tl2 = gsap.timeline({
   scrollTrigger: {
     trigger: ".about_img",
@@ -32,7 +32,7 @@ var tl2 = gsap.timeline({
 
 tl2.to(".about_img img", {
   scale: 1.1
-});
+});*/
 
 //================================================== responsive nav
 let btn = document.querySelector(".nav_btn .button");

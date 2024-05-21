@@ -16,8 +16,7 @@
     <!-- Loader -->
     <div id="loader">
         <div class="heading">
-            <h1>About Geffen</h1>
-            
+            <h1 style="visibility:hidden;">About Geffen</h1>
         </div>
     </div>
     <div id="loader_overlay"></div>
@@ -62,7 +61,7 @@
             <ul>
                 <li><a href="index.html" class="active">Welcome</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="about.html">Resume</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="#a" class="btnc">Contact</a></li>
             </ul>
             <div class="social">
@@ -90,10 +89,10 @@
         </div>
         <div class="nav_links">
             <ul id="frame">
-                <li><a href="index.html">Welcome</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li class="active"><a href="about.html">About</a></li>
-                <li><a href="#a" class="btncc">Contact</a></li>
+                <a href="index.html"><li>Welcome</li></a>
+                <a href="portfolio.html"><li>Portfolio</li></a>
+                <a href="about.html"><li class="active">About</li>
+                <a href="#a" class="btncc"><li>Contact</li></a>
             </ul>
         </div>
         <div class="nav_socials">
@@ -131,7 +130,7 @@
     <!-- Hero -->
     <section class="about_header container">
         <p>
-             Hi I'm Geffen. I'm an accomplished design OG in the fintech space. For the past few years I've been working with the Electric Coin Company to help raise the user experience bar for Zcash, without sacrificing privacy.</p>
+             Hi I'm Geffen. I'm an accomplished designer in the fintech space. For the past few years I've been working with the Electric Coin Company to help raise the user experience bar for Zcash, without sacrificing privacy.</p>
     </section>
     <!-- two cloumns Block 1 -->
     <section class="about_wrapper container">
@@ -196,7 +195,7 @@
                 </div>
             </div>
             <div class="right">
-                <h1>I have a passion for <label for="menuToggle" class="toggleButton md-button md-button--raised">Art</label>,<label for="menuToggle" class="toggleButton md-button md-button--raised">Design</label>, <label for="menuToggle" class="toggleButton md-button md-button--raised">Privacy</label>, and all these weird blockchain things.</h1>
+                <h1>I have a passion for <label for="menuToggle" class="toggleButton md-button md-button--raised">Art</label>, <label for="menuToggle" class="toggleButton md-button md-button--raised">Design</label>, <label for="menuToggle" class="toggleButton md-button md-button--raised">Privacy</label>, and all these weird blockchain things.</h1>
                 <p>
                     I hold a Bachelor's degree from Savannah College of Art (SCAD) and have been working in the design industry for more than two
                     decades. During this time, I have honed my skills in design principles, user experience, and
@@ -317,15 +316,16 @@
 
 
     <!-- scripts -->
+    <script>
+        //This is done in pure javascript so greensock gets the correct size for animations (currently doesn't appear to recalculate on resize so labels and menus look bugged)
+        window.onresize = function(){ location.reload(); }
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="js/flipText.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        //This is done in pure javascript so greensock gets the correct size for animations (currently doesn't appear to recalculate on resize so labels and menus look bugged)
-        window.onresize = function(){ location.reload(); }
-    </script>
+    
 </body>
 
 </html>

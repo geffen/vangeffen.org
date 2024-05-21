@@ -108,6 +108,7 @@ frames.forEach(frame => {
 
 //================================================== Loader
 var tl3 = gsap.timeline();
+TweenLite.from("#loader .heading h1", .2, {autoAlpha:0});
 tl3.from("#loader .heading h1", {
   y: "100%",
   duration: 1,
@@ -117,7 +118,7 @@ tl3.from("#loader .heading h1", {
   .to("#loader .heading h1", {
     y: "-105%",
     duration: 1,
-    delay: .5,
+    delay: .2,
     ease: Circ.easeInOut
   })
 
@@ -139,7 +140,7 @@ tl3.from("#loader .heading h1", {
   .to("#loader_overlay", {
     height: "0%",
     duration: 1,
-    delay: -.5,
+    delay: -.4,
     ease: Circ.easeInOut,
   })
 

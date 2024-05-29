@@ -1,0 +1,5 @@
+<meta property="fc:frame" content="vNext" />
+<meta property="fc:frame:image" content="http://...image-question.png" />
+<meta property="fc:frame:button:1" content="Rock" />
+<meta property="fc:frame:button:2" content="Papper" />
+<meta property="fc:frame:button:3" content="Scissors" />

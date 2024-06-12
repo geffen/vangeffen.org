@@ -2217,7 +2217,7 @@ nav .nav_btn {
   letter-spacing: -1px;
   font-weight: lighter;
   line-height: 150%;
-  width: 30%;
+  width: 60%;
 }
 @media only screen and (max-width: 1140px) {
   .case_header p {
@@ -2237,12 +2237,12 @@ nav .nav_btn {
 }
 @media only screen and (max-width: 912px) {
   .case_header p {
-    width: 40%;
+    width: 60%;
   }
 }
 @media only screen and (max-width: 670px) {
   .case_header p {
-    width: 50%;
+    width: 60%;
   }
 }
 .case_header .filter {
@@ -2380,6 +2380,7 @@ nav .nav_btn {
   justify-content: center;
   gap: 2.6vw;
   overflow: hidden;
+  padding-top: 5.2vw !important;
   padding-bottom: 7.8vw;
   border-bottom-right-radius: 50px;
   border-bottom-left-radius: 50px;
@@ -2435,6 +2436,24 @@ nav .nav_btn {
 @media only screen and (max-width: 670px) {
   .case_wrapper .case img {
     border-radius: 12px;
+  }
+}
+.case_wrapper .case li, .case_wrapper .case .article_text {
+  font-size: 2.1vw;
+}
+@media only screen and (max-width: 1140px) {
+  .case_wrapper .case li, .case_wrapper .case .article_text {
+    font-size: 1.6vw;
+  }
+}
+@media only screen and (max-width: 912px) {
+  .case_wrapper .case li, .case_wrapper .case .article_text {
+    font-size: 2vw;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .case_wrapper .case li, .case_wrapper .case .article_text {
+    font-size: 2.6vw;
   }
 }
 .case_wrapper .case .case_text {

@@ -5,19 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joseph Van Geffen | About</title>
+    <title>Joseph Van Geffen | Case</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
-    <!-- cursor
-    <div id="cursor"></div>  -->
+    <!-- cursor 
+    <div id="cursor"></div> -->
     <!-- Loader -->
     <div id="loader">
         <div class="heading">
-            <h1 style="visibility:hidden;">Metaverse & Generative Art</h1>
-            
+            <h1 style="visibility:hidden;">Metaverse / Web3 / NFTs</h1>
         </div>
     </div>
     <div id="loader_overlay"></div>
@@ -26,62 +25,46 @@
         <div class="blur"></div>
         <div class="wrapper">
             <div class="content">
-                <div class="top">
-                    <p>Do you have an opportunity or project to discuss?<br>Send me an email!</p>
-                    <img id="frame" class="close2" src="images/component-7.png" alt="" srcset="">
-                </div>
-                <div class="avatarstand">
-                    <img src="images/contact/geffen_vrmstill.png" class="vrm" alt="Decentraland Geffen Avatar" srcset="">
-                </div>
-                <div class="form">
-                    <div class="contact_btn resume" style="justify-content: right;display: flex; position: absolute;right: 2vw;">
-                        <div class="button" id="frame">
-                            <a href="assets/jvg_resume2024.pdf" target="resumedl" class="m-flip js-flip">
-                                <span class="m-flip_item">Download Resume</span>
-                                <span class="m-flip_item">Acrobat PDF</span>
-                            </a>
-                        </div>
+                <div class="contactcontent">
+                    <div class="top"><img id="frame" class="close2" src="images/component-7.png" alt="" srcset="">
                     </div>
-                    <div class="contact_btn email">
-                        <div class="button" id="frame">
-                            <a href="mailto:geffen@gmail.com?subject='Lets%20get%20to%20work!'" class="m-flip js-flip">
-                                <span class="m-flip_item">Email Geffen</span>
-                                <span class="m-flip_item">geffen@gmail.com</span>
-                            </a>
-                        </div>
+
+                    <div class="avatar">
+                        <div class="CircleStroke"></div>
+                        <div class="JVGPhoto"></div>
+                    </div>
+
+                    <div class="Biography">
+                        <span class="Name">Joseph Van Geffen</span>
+                        <span class="Title">Design Manager, UX/Product Designer, Web3/Emerging Technologies.</span>
+                    </div>
+
+                    <div class="form">
+                        <a href="assets/jvg_resume2024.pdf" target="resumedl">
+                            <div class="secondarybutton" id="frame">
+                                <span style="text-align:center;">Download CV</span>
+                            </div>
+                        </a>
+                        <a href="mailto:geffen@gmail.com?subject='Lets%20get%20to%20work!'" class="">
+                            <div class="primarybutton" id="frame">
+                                <span style="text-align:center;">Email Geffen</span>
+
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
-            <!--<ul>
-                <li>
-                    <a id="frame" href="#a" class="m-flip js-flip">
-                        <span class="m-flip_item">Instagram</span>
-                        <span class="m-flip_item">Instagram</span>
-                    </a>
-                </li>
-                <li>
-                    <a id="frame" href="#a" class="m-flip js-flip">
-                        <span class="m-flip_item">Facebook</span>
-                        <span class="m-flip_item">Facebook</span>
-                    </a>
-                </li>
-                <li>
-                    <a id="frame" href="#a" class="m-flip js-flip">
-                        <span class="m-flip_item">geffen@gmail.com</span>
-                        <span class="m-flip_item">geffen@gmail.com</span>
-                    </a>
-                </li>
-            </ul>-->
         </div>
     </div>
+    <!-- responsive nav -->
     <div class="responsive_nav">
         <div class="close">
             <img src="images/component-13.png" alt="" srcset="">
         </div>
         <div class="resLinks">
             <ul>
-                <li><a href="index.html" class="active">Welcome</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="index.html">Welcome</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="#a" class="btnc">Contact</a></li>
             </ul>
@@ -110,10 +93,19 @@
         </div>
         <div class="nav_links">
             <ul id="frame">
-                <a href="index.html"><li>Welcome</li></a>
-                <a href="portfolio.html"><li class="active">Portfolio</li></a>
-                <a href="about.html"><li>About</li>
-                <a href="#a" class="btncc"><li>Contact</li></a>
+                <ul id="frame">
+                    <a href="index.html">
+                        <li>Welcome</li>
+                    </a>
+                    <a href="portfolio.html">
+                        <li class="active">Portfolio</li>
+                    </a>
+                    <a href="about.html">
+                        <li>About</li>
+                        <a href="#a" class="btncc">
+                            <li>Contact</li>
+                        </a>
+                </ul>
             </ul>
         </div>
         <div class="nav_socials">
@@ -143,199 +135,217 @@
             <div class="button" style="width:auto;">
                 <a href="#a" class="m-flip js-flip">
                     <span style="text-align: center; top: 0px;"">Menu</span>
-                    <!--<span class="m-flip_item">Menu</span>-->
+                    <!--<span class=" m-flip_item">Menu</span>-->
                 </a>
             </div>
         </div>
     </nav>
-    <!-- Hero -->
-    <section class="about_header container">
-        <p>
-            At Sephora, I had the privilege of contributing to one of the world's leading beauty retailers, where I played a pivotal role in enhancing the online customer experience. My responsibilities included collaborating on designs and the full implementation of microsites, including hosting and analytics. During my time with Sephora, I gained valuable insights into the beauty industry, honed my skills in web usability, ajax web programming, and had the opportunity to collaborate with a talented team of professionals who share a passion for innovation and customer satisfaction. 
-            Together, we worked towards ensuring that Sephora remained at the forefront of the beauty industry, providing customers with not only exceptional products but also an immersive and delightful shopping experience</p>
+    <!-- header -->
+    <section class="case_header container">
+        <p>Web3 / Metaverse / NFT Projects</p>
     </section>
-    <!-- two cloumns Block 1 -->
-    <section class="about_wrapper container">
-        <div class="content" id="about">
-            <div class="left">
+    <!-- Cases -->
+    <div class="case_wrapper container">
+        <div class="case" id="frame">
+            <img src="images/cs_aopen.gif" alt="Australian Open" srcset="">
+            <div class="case_text container">
+                <p>Australian Open</p>
                 <div>
-                    <span>Fun stuff:</span>
-                    <ul>
-                        <li>
-                            <p>Small Business, Fullstack Team</p>
-                        </li>
-                        <li>
-                            <p>Agile Path</p>
-                        </li>
-                        <li>
-                            <p>IDEO</p>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <span>Soft Skills</span>
-                    <ul>
-                        <li>
-                            <p>Design Leader</p>
-                        </li>
-                        <li>
-                            <p>Collaborative</p>
-                        </li>
-                        <li>
-                            <p>Mentoring</p>
-                        </li>
-                        <li>
-                            <p>Hands-On</p>
-                        </li>
-                        <li>
-                            <p>Team player</p>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <span>Hard Skills</span>
-                    <ul>
-                        <li>
-                            <p>Figma/Sketch/Invision/Adobe CC</p>
-                        </li>
-                        <li>
-                            <p>UX Reseach & Testing</p>
-                        </li>
-                        <li>
-                            <p>UX/UI Design</p>
-                        </li>
-                        <li>
-                            <p>Interation Design</p>
-                        </li>
-                        <li>
-                            <p>Service Design</p>
-                        </li>
-                    </ul>
+                    <p>Artwork</p>
+                    <p>Texture Mapping</p>
+                    <p>NFT</p>
+                    <p>XR</p>
                 </div>
             </div>
-            <div class="right">
-                <h1>Increased marketing <span>ROI</span> for Sephora by designing, programming, and hosting promotional <span>micro-sites</span> campaigns for three years. These sites topped out at registering more than 1.5 million users!</h1>
-                <p>Under construction</p>
+        </div>
+        <div class="case" id="frame">
+            <h2>Australian Open Artballs</h2>
+            <ul>
+                <li>AO ArtBall NFTs</li>
+            </ul>
+            <hr>
+            <br />
+            <p class="article_text">Created multiple original artworks for the Australian Open. AO ArtBall exists at the
+                intersection of sport and innovation, a membership that unlocks a new arena to keep fans in the game –
+                on and off the court.
+                <br /><br />
+                Membership is accessible via the AO ArtBall, providing holders with an unprecedented level of access
+                (tickets, events) as well as unique rewards from leading web3 projects covering both real life event and
+                virtual worlds.
+                <br /><br />
+                Own the ball, Own the court, Own the moment.<br />
+                <br />
+                <li>Hand-made art, not generative or AI
+                    <br /><br />
+                    <a href="https://opensea.io/assets/ethereum/0x05844e9ae606f9867ae2047c93cac370d54ab2e1/2514"
+                        target="aoout1">#2514 AO Artball on OpenSea</a>
+                    <a href="https://opensea.io/assets/ethereum/0x05844e9ae606f9867ae2047c93cac370d54ab2e1/4002"
+                        target="aoout2">#4002 AO Artball on OpenSea</a>
+                    <br />
+            </p>
+        </div>
 
-                - Built an administration and call center page for Sephora with active metrics for real-time reporting on emails captured, codes released, quantity of promotional products, and employee appreciation metrics.
-            </div>
-        </div>
-        <div class="content" id="education">
-            <div class="left">
+
+
+        <div class="case" id="frame">
+            <img src="images/cs_gnarsauce.gif" alt="Gnarsauce - Gnars Hot Sauce" srcset="">
+            <div class="case_text container">
+                <p>Gnars (Nouns)</p>
                 <div>
-                    <span>Client Info and Working Dates</span>
+                    <p>Retail Commerce</p>
+                    <p>DAO</p>
+                    <p>NFT</p>
                 </div>
             </div>
-            <div class="right">
-                <ul>
-                    <li>
-                        <p>Electric Coin Company</p>
-                        <p>2018-2024</p>
-                    </li>
-                    <li>
-                        <p>Capital One; Small Business Banking</p>
-                        <p>2014-2017</p>
-                    </li>
-                    <li>
-                        <p>Creative Developer for mobile games company</p>
-                        <p>2009-2013</p>
-                    </li>
-                    <li>
-                        <p>User Experience Designer for smart televisions</p>
-                        <p>2004-2008</p>
-                    </li>
-                    <li>
-                        <p>Marketing and Ad Agency Microsite Production</p>
-                        <p>1998-2003</p>
-                    </li>
-                </ul>
-            </div>
         </div>
-        <div class="content" id="approach">
-            <div class="left">
+        <div class="case" id="frame">
+            <h2>Gnarsauce Hot Sauce</h2>
+            <ul>
+                <li>Extreme athlete nounish platform, Gnars Hot Sauce</li>
+            </ul>
+            <hr>
+            <br />
+            <p class="article_text">Created a white-label hot sauce product for the Nounish extreme athlete's platform, Gnars. The original sauce had to be gnarly so I collaborated with Karmasauce (Hot Ones) to make a strong sauce. The community loved it and another round of sauces (this time with an easier taco sauce pairing) is in the works!
+                <br /><br />
+                <li>DAO funded
+                <li>NFT driven
+                <li>Part of athlete welcome package 
+                <li>Internationally acclaimed!
+            </p>
+        </div>
+
+
+        <div class="case" id="frame">
+            <img src="images/cs_dcl.jpg" alt="Decentraland Projects" srcset="">
+            <div class="case_text container">
+                <p>Decentraland</p>
                 <div>
-                    <span>Approach</span>
+                    <p>Wearables</p>
+                    <p>Digital Land</p>
+                    <p>POAPs</p>
+                    <p>NFTs</p>
                 </div>
             </div>
-            <div class="right">
-                <ul>
-                    <li>
-                        <h1>Wireframes</h1>
-                        <p>Wireframes are a crucial tool in the design process, providing a blueprint for the layout and
-                            functionality of a digital product. To create effective wireframes, it's important to
-                            understand the user's needs and goals, as well as the requirements and constraints of the
-                            project.</p>
-                    </li>
-                    <li>
-                        <h1>Digital Design</h1>
-                        <p>To create effective designs, it's important to understand the needs, goals, and behaviors of
-                            the target audience. This can be achieved through user research and testing, which can
-                            uncover insights about user preferences and pain points. Once this information is gathered,
-                            designers can create wireframes and prototypes to iterate and refine the design.</p>
-                    </li>
-                    <li>
-                        <h1>Webflow Development</h1>
-                        <p>Webflow provides extensive design control, allowing users to customize every aspect of their
-                            websites. From typography and layouts to animations and interactions, users have the
-                            flexibility to create unique and visually appealing designs.</p>
-                    </li>
-                </ul>
+        </div>
+        <div class="case" id="frame">
+            <h2>Decentraland: Real-Estate, Locations, & Wearables</h2>
+            <ul>
+                <li>Zcash & ECC Wearables, Mr. Dhingia real-estate, Vox Boards, Franky's Tavern</li>
+            </ul>
+            <hr>
+            <br />
+            <p class="article_text">Large contributor into the DCL space and [more copy]
+                <br /><br />
+                <li>3D modelled, textured, and deployed wearables for Zcash & ECC
+                <li>Partnered with Mr. Dhingia to create DCL environments
+                <li>Hosted Vox Boards
+                <li>Resident artist for all things Franky's Tavern
+                    <br />
+            </p>
+        </div>
+
+
+        <div class="case" id="frame">
+            <img src="images/cs_badtryp.jpg" alt="Byoverse" srcset="">
+            <div class="case_text container">
+                <p>BYO - BADTRYP</p>
+                <div>
+                    <p>Open-world</p>
+                    <p>Resource Collection</p>
+                    <p>Guild Leader</p>
+                </div>
             </div>
         </div>
-    </section>
-    <!-- Awwards -->
-    <section class="awwards container">
-        <div class="wrapper">
-            <div class="wrapper_left">
-                <p>All of that crazy Web3 DAO interesting stuff</p>
-            </div>
-            <div class="wrapper_right">
-                <ul>
-                    <li>
-                        <p>Gnarsauce, a nouns to gnars based hot sauce</p>
-                        <span>gnars.kitchen</span>
-                    </li>
-                    <li>
-                        <p>GL of BADTRYP, a Web3 guild based in the byoverse world</p>
-                        <span>badtryp.dao</span>
-                    </li>
-                    <li>
-                        <p>DCL - Decentraland Landlord & Game Programmer</p>
-                        <span>geffenz.land</span>
-                    </li>
-                    <li>
-                        <p>POAPs & NFTs for Franky's Bar</p>
-                        <span>juxton.land</span>
-                    </li>
-                    <li>
-                        <p>dcl deploy frankys</p>
-                        <span>juxton.land</span>
-                    </li>
-                </ul>
+        <div class="case" id="frame">
+            <h2>Byoverse Concept Art</h2>
+            <ul>
+                <li>BYOPILLS BADTRYP</li>
+            </ul>
+            <hr>
+            <br />
+            <p class="article_text">I created concept art to inspire and keep the community involved while the BYOPILLS Byoverse game was created. I created a Villianous Guild called BADTRYP and started a social media campaign.<br />
+                <br />
+                <li>Concept Art
+                <li>Guild Leader of BADTRYP (The Villains)
+                <li>Social Marketing
+            </p>
+        </div>
+
+        <div class="case" id="frame">
+            <img src="images/cs_mugclub.jpg" alt="Mug Club" srcset="">
+            <div class="case_text container">
+                <p>MUG CLUB</p>
+                <div>
+                    <p>Community</p>
+                    <p>Mug Collection</p>
+                    <p>NFT Creation</p>
+                </div>
             </div>
         </div>
-    </section>
-    
-        <!-- Footer -->
-        <section class="footer container">
-            <div class="row row-bottom">
-                <p>Joseph Van Geffen</br>
+        <div class="case" id="frame">
+            <h2>Mugclub Founder</h2>
+            <ul>
+                <li>Web3 application with custom 3D mugs</li>
+            </ul>
+
+            <hr>
+            <br />
+            <p class="article_text">Co-founder of Mug Club, a social experiment surrounding the universal love of Mugs. Regardless if it is coffee, beer, whisky, water, kombucha, absinthe, soup, or ice cream - you need a good mug.<br />
+                <br />
+                <li>Web3
+                <li>Responsive Design
+                <li>3D Modelling
+            </p>
+        </div>
+
+        <div class="case" id="frame">
+            <img src="images/cs_runiverse.jpg" alt="Runiverse" srcset="">
+            <div class="case_text container">
+                <p>RUNIVERSE</p>
+                <div>
+                    <p>Community</p>
+                    <p>D&D</p>
+                    <p>NFTs</p>
+                </div>
+            </div>
+        </div>
+        <div class="case" id="frame">
+            <h2>COMING SOON - Runiverse</h2>
+            <ul>
+                <li>D&D Module Design</li>
+            </ul>
+
+            <hr>
+            <br />
+            <p class="article_text">*<br />
+                <br />
+                <li>Web3
+                <li>Game Design
+                <li>Dungeons & Dragons
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <section class="footer container">
+        <div class="row row-bottom">
+            <p>Joseph Van Geffen</br>
                 Portfolio & Resume Site</br>
                 © 2024; All rights reserved.</p>
-    
-                <ul>
-                    <li></li>
-                </ul>
-                <ul>
-                    <li>
-                        <a id="frame" href="#a" class="m-flip js-flip">
-                            <p>Design is both a process and an outcome. Experience helps too :)</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
 
+            <ul>
+                <li></li>
+            </ul>
+            <ul>
+                <li>
+                    <a id="frame" href="#a" class="m-flip js-flip">
+                        <p>Design is both a process and an outcome. Experience helps too :)</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
 
     <!-- scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>

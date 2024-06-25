@@ -140,7 +140,7 @@
 
     .case {
         position: relative;
-        height: 35vw;
+        height: auto;
         width: 42vw;
 
         @include devices(mobile) {
@@ -169,10 +169,10 @@
             }
         }
         li, .article_text {
-            font-size: 24px;
+            font-size: 18px;
 
             @include devices(laptop) {
-                font-size: 1.6vw;
+                font-size: 14px;
             }
 
             @include devices(tablet) {
@@ -180,7 +180,7 @@
             }
 
             @include devices(mobile) {
-                font-size: 12px;
+                font-size: 14px;
             }
         }
         .case_text {

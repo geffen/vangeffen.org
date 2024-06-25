@@ -1603,12 +1603,12 @@ nav .nav_btn {
   transition: all ease 0.5s;
 }
 .contact .blur {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(227, 237, 250, 0.7);
   position: relative;
   height: 100%;
   width: 100%;
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 .contact .wrapper {
   width: 100%;
@@ -2408,7 +2408,7 @@ nav .nav_btn {
 }
 .case_wrapper .case {
   position: relative;
-  height: 35vw;
+  height: auto;
   width: 42vw;
 }
 @media only screen and (max-width: 670px) {
@@ -2440,11 +2440,11 @@ nav .nav_btn {
   }
 }
 .case_wrapper .case li, .case_wrapper .case .article_text {
-  font-size: 24px;
+  font-size: 18px;
 }
 @media only screen and (max-width: 1140px) {
   .case_wrapper .case li, .case_wrapper .case .article_text {
-    font-size: 1.6vw;
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 912px) {
@@ -2454,7 +2454,7 @@ nav .nav_btn {
 }
 @media only screen and (max-width: 670px) {
   .case_wrapper .case li, .case_wrapper .case .article_text {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 .case_wrapper .case .case_text {

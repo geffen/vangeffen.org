@@ -9,11 +9,11 @@
   transform: translateX(100%);
   transition: all ease 0.5s;
   .blur {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgb(227 237 250 / 70%);
     position: relative;
     height: 100%;
     width: 100%;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(10px);
   }
   .wrapper {
     width: 100%;

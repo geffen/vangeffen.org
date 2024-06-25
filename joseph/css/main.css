@@ -364,6 +364,7 @@ a[class=nocolor] {
   width: 260px !important;
   height: 85px !important;
   margin-left: 10px;
+  margin-bottom: 10px;
   border-radius: 0px !important;
 }
 
@@ -721,7 +722,7 @@ nav .nav_btn {
 }
 
 .hero {
-  height: 82vh; /* 100vh */
+  height: 90vh; /* 100vh */
   display: flex;
   align-items: last baseline;
   gap: 13.5vw;
@@ -846,6 +847,7 @@ nav .nav_btn {
   font-size: 3.75vw;
   letter-spacing: -2px;
   font-weight: lighter;
+  text-shadow: 1px 1px 2px rgb(255, 255, 245);
 }
 @media only screen and (max-width: 912px) {
   .hero .right h1 {

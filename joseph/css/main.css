@@ -364,7 +364,6 @@ a[class=nocolor] {
   width: 260px !important;
   height: 85px !important;
   margin-left: 10px;
-  margin-bottom: 10px;
   border-radius: 0px !important;
 }
 
@@ -1617,14 +1616,14 @@ nav .nav_btn {
   height: 100%;
   position: absolute;
   top: 0;
-  padding: 5.2vw 2.6vw;
+  padding: 2.6vw 2.6vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 @media only screen and (max-width: 912px) {
   .contact .wrapper {
-    padding: 10.4vw 5.2vw;
+    padding: 5.2vw 5.2vw;
   }
 }
 @media only screen and (max-width: 670px) {
@@ -1831,7 +1830,8 @@ nav .nav_btn {
   }
 }
 .contact .wrapper .content .top img {
-  width: 1.45vw;
+  width: 20px;
+  max-width: 20px;
   cursor: pointer;
 }
 @media only screen and (max-width: 912px) {

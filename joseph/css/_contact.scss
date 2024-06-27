@@ -20,12 +20,12 @@
     height: 100%;
     position: absolute;
     top: 0;
-    padding: 5.2vw 2.6vw;
+    padding: 2.6vw 2.6vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     @include devices(tablet) {
-      padding: 10.4vw 5.2vw;
+      padding: 5.2vw 5.2vw;
     }
     @include devices(mobile) {
       padding: 15vw 0vw;
@@ -196,7 +196,8 @@
           @include font20;
         }
         img {
-          width: 1.45vw;
+          width: 20px;
+          max-width:20px;
           cursor: pointer;
           @include devices(tablet) {
             width: 3vw;

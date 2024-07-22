@@ -169,8 +169,8 @@
             }
         }
         li, .article_text {
-            font-size: 18px;
-
+            font-size: 14px;
+ 
             @include devices(laptop) {
                 font-size: 14px;
             }

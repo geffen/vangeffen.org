@@ -4,19 +4,24 @@
     align-items: last baseline;
     gap: 13.5vw;
     padding-bottom: 2vw;
+    -webkit-transition: ease 0.5s;
+        -moz-transition: ease 0.5s;
+        -ms-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
     @include devices(laptop) {
-        height: 60vw;
+        height: 55vw;
         gap: 5vw;
         padding-bottom: 0vw;
     }
     @include devices(tablet) {
-        height: 90vw;
+        height: 60vw;
         //flex-direction: column-reverse;
         gap: 5vw;
         padding-bottom: 0vw;
     }
     @include devices(mobile) {
-        height: 96vw;
+        height: 55vw;
         gap: 7vw;
         padding-bottom: 0vw;
     }

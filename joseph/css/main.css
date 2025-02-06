@@ -726,24 +726,25 @@ nav .nav_btn {
   align-items: last baseline;
   gap: 13.5vw;
   padding-bottom: 2vw;
+  transition: ease 0.5s;
 }
 @media only screen and (max-width: 1140px) {
   .hero {
-    height: 60vw;
+    height: 55vw;
     gap: 5vw;
     padding-bottom: 0vw;
   }
 }
 @media only screen and (max-width: 912px) {
   .hero {
-    height: 90vw;
+    height: 60vw;
     gap: 5vw;
     padding-bottom: 0vw;
   }
 }
 @media only screen and (max-width: 670px) {
   .hero {
-    height: 96vw;
+    height: 55vw;
     gap: 7vw;
     padding-bottom: 0vw;
   }
